@@ -17,7 +17,7 @@
        padding: 20px 10%;
         align-items: center;
 
-       background: darkorange ;
+       /*background:gold;*/
        /*display: flex;*/
        /*justify-content: space-between;*/
 
@@ -50,9 +50,14 @@
        color : white ;
        margin-left: 35px;
 
+       /*border: 10px;*/
+       /*border-radius: 100%;*/
+       /*background: gold;*/
+
    }
 
     .navbar>a+a{
+
         left: 110px;
 
     }
@@ -88,7 +93,7 @@
         aspect-ratio: 1/1;
 
         border-radius: 100%;
-        background: darkorange;
+        background: goldenrod;
 
     }
 
