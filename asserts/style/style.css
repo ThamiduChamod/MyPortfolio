@@ -1,0 +1,142 @@
+
+
+    body{
+        background: black;
+        color: white;
+    }
+
+
+   #header{
+       width: 100vw;
+       height: 20px;
+
+       position: fixed;
+       top: 0;
+       left: 0;
+
+       padding: 20px 10%;
+        align-items: center;
+
+       background: darkorange ;
+       /*display: flex;*/
+       /*justify-content: space-between;*/
+
+       /*z-index: 100;*/
+
+   }
+
+
+   #header>h3{
+       position: absolute;
+       top: 0;
+       left: 50px;
+
+
+   }
+
+   #header>h3+div{
+       width: 50vw;
+       height: 50px;
+       position: absolute;
+       top: 0;
+       right: 200px;
+
+
+   }
+
+   .navbar a{
+       position: absolute;
+       align-items: center;
+       color : white ;
+       margin-left: 35px;
+
+   }
+
+    .navbar>a+a{
+        left: 110px;
+
+    }
+
+    .navbar>a+a+a{
+        left: 250px;
+    }
+
+    .navbar>a+a+a+a{
+        left: 350px;
+    }
+
+    .navbar>a+a+a+a+a{
+        left: 450px;
+    }
+
+
+
+    #aboutMe{
+        width: 100vw;
+        position: absolute;
+        top: 100px;
+
+    }
+    .profilePhoto{
+        /*width: 50vw;*/
+        position: absolute;
+        top: 10px;
+        left: 800px;
+
+
+        width: 500px;
+        aspect-ratio: 1/1;
+
+        border-radius: 100%;
+        background: darkorange;
+
+    }
+
+    .profilePhoto>img{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    #aboutTxt{
+        width: 50vw;
+        position: absolute;
+        top: 200px;
+    }
+
+
+    #aboutTxt>:nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: 200px;
+        color: #ff253a;
+
+    }
+
+    #aboutTxt>:nth-child(2){
+        position: absolute;
+        top: 30px;
+        left: 200px;
+        color: navajowhite;
+    }
+    #aboutTxt>:nth-child(3){
+
+        position: absolute;
+        top: 30px;
+        left: 250px;
+        color: greenyellow;
+    }
+    #aboutTxt>:nth-child(4){
+
+        width:50vw;
+        position: absolute;
+        top: 70px;
+        left: 10px;
+
+        color: darkorange;
+    }
+
+
