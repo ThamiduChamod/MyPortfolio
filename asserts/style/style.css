@@ -25,6 +25,7 @@
         z-index: 100;
 
         border-bottom: 1px solid white;
+        background: black;
 
     }
 
@@ -261,3 +262,79 @@
 
 
  /* ========== my works ========== */
+    #myWorks{
+        width: 98vw;
+        height: 110vh;
+
+        position: absolute;
+        top: 100vh;
+
+        /*background: #43077b;*/
+
+    }
+
+    #myWorks>div>h2{
+        position: relative;
+        top: 70px;
+        color: white;
+
+        font-size: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            color: #43077b;
+        }
+
+
+    }
+
+    section+section{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+
+    }
+    section+section>div:first-child{
+        grid-column: 1/5;
+    }
+
+    .works{
+
+        width: 20vw;
+        height: 350px;
+
+        background: white;
+        border-radius: 20px;
+
+        margin: 32px 32px 32px 32px;
+
+        /*padding: 30px 30px 30px 30px;*/
+
+    }
+
+    .works>h3{
+        position: relative;
+        top: 10px;
+        color: black;
+        text-align: center;
+    }
+
+    .works>img{
+        position: relative;
+        top: 20PX;
+        left: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .works>p{
+        position: relative;
+        top: 50px;
+
+        color: black;
+        text-align: center;
+    }
