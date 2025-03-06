@@ -8,16 +8,18 @@
 
    #header{
        width: 100vw;
-       height: 20px;
+       height: 80px;
 
        position: fixed;
        top: 0;
        left: 0;
+       border-bottom: 1px solid white;
 
-       padding: 20px 10%;
-        align-items: center;
 
-       /*background:gold;*/
+       /*padding: 20px 10%;*/
+       /* align-items: center;*/
+
+
        /*display: flex;*/
        /*justify-content: space-between;*/
 
@@ -27,10 +29,9 @@
 
 
    #header>h3{
-       position: absolute;
-       top: 0;
-       left: 50px;
-
+       width: 50vw;
+        top: 50%;
+       text-align: center;
        font-size: 30px;
 
 
@@ -39,12 +40,15 @@
         color: #43077b;
     }
 
-   #header>h3+div{
+   #header div{
        width: 50vw;
-       height: 50px;
+       height: 20px;
+
        position: absolute;
        top: 0;
-       right: 200px;
+       left: 50vw;
+
+       /*border: 10px solid white;*/
 
 
    }
@@ -85,33 +89,155 @@
 
 
 
-    #aboutMe{
-        width: 100vw;
+
+
+    /* ========== about me ========== */
+ #aboutMe{
+
+    #txt {
+        width: 50vw;
+        height: 100vh;
+
         position: absolute;
-        top: 100px;
+        top: 0;
+        left: 0;
+
+        /*border: 10px solid white;*/
+        /*box-sizing: border-box;*/
+    }
+
+    #photo {
+        width: 50vw;
+        height: 100vh;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        /*border: 10px solid white;*/
+        /*box-sizing: border-box;*/
 
     }
-    .profilePhoto{
+
+    #aboutTxt > h1 {
+        position: absolute;
+        font-size: 100px;
+        top: 8vh;
+        left: 20px;
+        /*color: #ff253a;*/
+
+    }
+
+    #aboutTxt h2 {
+        position: absolute;
+        top: 30vh;
+        left: 20px;
+
+        font-size: 40px;
+        /*color: navajowhite;*/
+    }
+
+    #aboutTxt p {
+
+        width: 50vw;
+
+        position: absolute;
+        top: 45vh;
+
+
+        font-size: 20px;
+        text-align: center;
+        /*position: absolute;*/
+        /*top: 70px;*/
+        /*right: 0;*/
+
+    }
+
+    .social {
+        position: absolute;
+        top: 60vh;
+
+        width: 50vw;
+        height: 100px;
+
+        /*border:10px solid white;*/
+
+    }
+
+    .social > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .fa-brands {
+
+        position: relative;
+        left: 80px;
+        right: 100px;
+
+        font-size: 50px;
+        margin: 25px 40px 100px 30px;
+
+
+    }
+
+    .social > div + div {
+        width: 50vw;
+        height: 50px;
+
+        position: absolute;
+        top: 130px;
+
+        /*left: 50%;*/
+        /*right: 50%;*/
+
+        /*border:10px solid white;*/
+
+
+    }
+
+    .social > div + div button {
+        width: 150px;
+
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+
+        border-radius: 25px;
+        text-align: center;
+    }
+
+    .profilePhoto {
         /*width: 50vw;*/
         position: absolute;
-        top: 40px;
-        left: 800px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
 
 
-        width: 420px;
+        width: 400px;
         aspect-ratio: 1/1;
 
         border-radius: 100%;
-        /*border: 10px solid #077b32;*/
-        box-shadow:  0 0 250px 50px  #43077b;
-        /*background: rgba(67, 7, 123, 0.62);*/
+        border: 5px solid white;
+        box-shadow: 0 0 250px 40px #43077b;
 
     }
 
-    .profilePhoto>img{
-        width: 420px;
+    .profilePhoto > img {
+        width: 400px;
         aspect-ratio: 1/1;
-        border-radius:100% ;
+        border-radius: 100%;
 
         position: absolute;
         top: 0;
@@ -121,47 +247,7 @@
         margin: auto;
     }
 
-    #aboutTxt{
-        width: 50vw;
-        height: 400px;
-        position: absolute;
-        top: 100px;
-    }
+}
 
 
-    #aboutTxt>:nth-child(1) {
-        position: absolute;
-        font-size: 50px;
-        top: 0;
-        left: 100px;
-        /*color: #ff253a;*/
-
-    }
-
-    #aboutTxt>:nth-child(2){
-        position: absolute;
-        top: 80px;
-        left: 100px;
-
-        font-size: 30px;
-        /*color: navajowhite;*/
-    }
-
-    #aboutTxt>:nth-child(3){
-
-        width:50vw;
-
-        position: absolute;
-
-        top: 150px;
-        /*position: absolute;*/
-        /*top: 70px;*/
-        /*right: 0;*/
-
-    }
-
-    #aboutTxt{
-        border:10px solid #eeeeee ;
-    }
-
-
+ /* ========== my works ========== */
