@@ -338,3 +338,10 @@
         color: black;
         text-align: center;
     }
+
+    .works:hover{
+        scale: 1.2;
+        color: black;
+        background-color: #43077b;
+        filter: drop-shadow(2px 2px 40px #43077b);
+    }
