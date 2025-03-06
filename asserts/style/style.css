@@ -31,8 +31,13 @@
        top: 0;
        left: 50px;
 
+       font-size: 30px;
+
 
    }
+    #header>h3 span{
+        color: #43077b;
+    }
 
    #header>h3+div{
        width: 50vw;
@@ -47,8 +52,12 @@
    .navbar a{
        position: absolute;
        align-items: center;
-       color : white ;
+       /*color : white ;*/
        margin-left: 35px;
+
+       color: white;
+
+       font-size: 20px;
 
        /*border: 10px;*/
        /*border-radius: 100%;*/
@@ -85,19 +94,25 @@
     .profilePhoto{
         /*width: 50vw;*/
         position: absolute;
-        top: 10px;
+        top: 40px;
         left: 800px;
 
 
-        width: 500px;
+        width: 420px;
         aspect-ratio: 1/1;
 
         border-radius: 100%;
-        background: goldenrod;
+        /*border: 10px solid #077b32;*/
+        box-shadow:  0 0 250px 50px  #43077b;
+        /*background: rgba(67, 7, 123, 0.62);*/
 
     }
 
     .profilePhoto>img{
+        width: 420px;
+        aspect-ratio: 1/1;
+        border-radius:100% ;
+
         position: absolute;
         top: 0;
         right: 0;
@@ -108,40 +123,45 @@
 
     #aboutTxt{
         width: 50vw;
+        height: 400px;
         position: absolute;
-        top: 200px;
+        top: 100px;
     }
 
 
     #aboutTxt>:nth-child(1) {
         position: absolute;
+        font-size: 50px;
         top: 0;
-        left: 200px;
-        color: #ff253a;
+        left: 100px;
+        /*color: #ff253a;*/
 
     }
 
     #aboutTxt>:nth-child(2){
         position: absolute;
-        top: 30px;
-        left: 200px;
-        color: navajowhite;
+        top: 80px;
+        left: 100px;
+
+        font-size: 30px;
+        /*color: navajowhite;*/
     }
+
     #aboutTxt>:nth-child(3){
 
-        position: absolute;
-        top: 30px;
-        left: 250px;
-        color: greenyellow;
-    }
-    #aboutTxt>:nth-child(4){
-
         width:50vw;
-        position: absolute;
-        top: 70px;
-        left: 10px;
 
-        color: darkorange;
+        position: absolute;
+
+        top: 150px;
+        /*position: absolute;*/
+        /*top: 70px;*/
+        /*right: 0;*/
+
+    }
+
+    #aboutTxt{
+        border:10px solid #eeeeee ;
     }
 
 
