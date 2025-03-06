@@ -1,94 +1,59 @@
 
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
 
     body{
         background: black;
         color: white;
+        margin: auto;
     }
 
 
-   #header{
-       width: 100vw;
-       height: 80px;
+    .header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 10px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
 
-       position: fixed;
-       top: 0;
-       left: 0;
-       border-bottom: 1px solid white;
+        border-bottom: 1px solid white;
 
-
-       /*padding: 20px 10%;*/
-       /* align-items: center;*/
-
-
-       /*display: flex;*/
-       /*justify-content: space-between;*/
-
-       /*z-index: 100;*/
-
-   }
+    }
 
 
-   #header>h3{
-       width: 50vw;
-        top: 50%;
-       text-align: center;
-       font-size: 30px;
+    .name{
+        margin-right: 10px;
+        font-size: 2em;
 
-
-   }
-    #header>h3 span{
+    }
+    .header>h3 span{
         color: #43077b;
     }
 
-   #header div{
-       width: 50vw;
-       height: 20px;
 
-       position: absolute;
-       top: 0;
-       left: 50vw;
-
-       /*border: 10px solid white;*/
-
-
-   }
-
-   .navbar a{
-       position: absolute;
-       align-items: center;
-       /*color : white ;*/
-       margin-left: 35px;
-
-       color: white;
-
-       font-size: 20px;
-
-       /*border: 10px;*/
-       /*border-radius: 100%;*/
-       /*background: gold;*/
-
-   }
-
-    .navbar>a+a{
-
-        left: 110px;
+    .navbar a{
+        width: fit-content;
+        height: fit-content;
+        font-size: 18px;
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 50px;
 
     }
+    .navbar a:hover{
+        color: #43077b;
 
-    .navbar>a+a+a{
-        left: 250px;
+
     }
-
-    .navbar>a+a+a+a{
-        left: 350px;
-    }
-
-    .navbar>a+a+a+a+a{
-        left: 450px;
-    }
-
-
-
 
 
     /* ========== about me ========== */
@@ -103,7 +68,7 @@
         left: 0;
 
         /*border: 10px solid white;*/
-        /*box-sizing: border-box;*/
+        box-sizing: border-box;
     }
 
     #photo {
@@ -115,23 +80,26 @@
         right: 0;
 
         /*border: 10px solid white;*/
-        /*box-sizing: border-box;*/
+        box-sizing: border-box;
 
     }
 
     #aboutTxt > h1 {
         position: absolute;
         font-size: 100px;
-        top: 8vh;
-        left: 20px;
+        top: 15vh;
+        left: 50px;
         /*color: #ff253a;*/
 
     }
+     /*#aboutTxt > h1:hover{*/
+     /*   font-size: 150px;*/
+     /*}*/
 
     #aboutTxt h2 {
         position: absolute;
         top: 30vh;
-        left: 20px;
+        left: 50px;
 
         font-size: 40px;
         /*color: navajowhite;*/
@@ -180,26 +148,45 @@
         /*right: 80px;*/
 
         font-size: 50px;
-        margin: 25px 40px 100px 30px;
+        margin: 20px 30px 100px 3px;
 
-        /*padding: 10px 10px;*/
+        /*!*padding: 10px 10px;*!*/
 
-        /*width: 80px;*/
-        /*aspect-ratio: 1/1;*/
+        /*!*width: 80px;*!*/
+        /*!*aspect-ratio: 1/1;*!*/
 
-        /*border: 5px solid #43077b;*/
-        /*border-radius: 100%;*/
-        /*box-sizing: border-box;*/
+        /*!*border: 5px solid #43077b;*!*/
+        /*!*border-radius: 100%;*!*/
+        /*!*box-sizing: border-box;*!*/
 
+
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        aspect-ratio: 1/1;
+        background-color: transparent;
+        border: 0.2rem solid #43077b;
+        border-radius: 50%;
+        color: #43077b;
+        /*margin: 5px 15px;*/
+        /*font-size: 1.5rem;*/
+        transition: 0.2s linear;
 
     }
+     .fa-brands:hover{
+         scale: 1.3;
+         color: black;
+         background-color: #43077b;
+         filter: drop-shadow(2px 2px 40px #43077b);
+     }
 
     .social>div+div {
         width: 50vw;
         height: 50px;
 
         position: absolute;
-        top: 130px;
+        top: 150px;
 
         /*left: 50%;*/
         /*right: 50%;*/
@@ -222,7 +209,20 @@
 
         border-radius: 25px;
         text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
     }
+
+     .social > div + div button:hover{
+         scale: 1.3;
+         color: black;
+         background-color: white;
+         filter: drop-shadow(0 0 10px white);
+     }
 
     .profilePhoto {
         /*width: 50vw;*/
@@ -237,6 +237,7 @@
         width: 400px;
         aspect-ratio: 1/1;
 
+        box-sizing: content-box;
         border-radius: 100%;
         border: 5px solid white;
         box-shadow: 0 0 250px 40px #43077b;
