@@ -176,16 +176,25 @@
     .fa-brands {
 
         position: relative;
-        left: 80px;
-        right: 100px;
+        left: 60px;
+        /*right: 80px;*/
 
         font-size: 50px;
         margin: 25px 40px 100px 30px;
 
+        /*padding: 10px 10px;*/
+
+        /*width: 80px;*/
+        /*aspect-ratio: 1/1;*/
+
+        /*border: 5px solid #43077b;*/
+        /*border-radius: 100%;*/
+        /*box-sizing: border-box;*/
+
 
     }
 
-    .social > div + div {
+    .social>div+div {
         width: 50vw;
         height: 50px;
 
