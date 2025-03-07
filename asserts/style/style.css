@@ -34,30 +34,93 @@
         margin-right: 10px;
         font-size: 2em;
 
+
+
     }
+
     .header>h3 span{
         color: #43077b;
+        /*border:2px solid white;*/
+
+
+        /*background: rgb(67,5,117);*/
+        /*background: linear-gradient(90deg, rgba(67,5,117,1) 0%, rgba(57,13,158,1) 35%, rgba(34,83,177,1) 60%, rgba(0,212,255,1) 100%);*/
     }
 
 
-    .navbar a{
-        width: fit-content;
-        height: fit-content;
+    /*.navbar a{*/
+    /*    width: fit-content;*/
+    /*    height: fit-content;*/
+    /*    font-size: 18px;*/
+    /*    color: white;*/
+    /*    font-weight: 500;*/
+    /*    text-decoration: none;*/
+    /*    margin-left: 50px;*/
+
+
+    /*}*/
+
+
+/* ============== Navbar Style from Googel =============== */
+    .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
         font-size: 18px;
-        color: white;
-        font-weight: 500;
+        text-transform: uppercase;
+        color: grey;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar a {
+        position: relative;
+        padding: 0 .5em .25em;
+        cursor: pointer;
+        color: grey;
         text-decoration: none;
-        margin-left: 50px;
-
-    }
-    .navbar a:hover{
-        color: #43077b;
-
-
+        transition: .3s;
+        overflow: hidden;
     }
 
+    .navbar a:hover {
+        color: #fff;
+    }
 
-    /* ========== about me ========== */
+    .navbar a:before {
+        content: "";
+        position: absolute;
+        inset: calc(100% - 3px) 0 0 0; /* 3px is the thickness of the underline */
+        /*background: #ce4f20;*/
+        background: #43077b; /* the color of the underline */
+        scale: 0 1; /* Initially, the underline is scaled to 0 */
+        transition: .3s, translate 0s .3s;
+    }
+
+    .navbar a:hover:before {
+        scale: 1; /* Scale the underline on hover */
+    }
+
+    .navbar a:hover:before {
+        translate: 0;
+        transition: .3s;
+    }
+
+    .navbar:hover a:has(~ a:hover):before {
+        translate: 100% 0;
+        transition: .2s .2s, scale 0s .4s;
+    }
+
+    .navbar:hover a:hover ~ a:before {
+        translate: -100% 0;
+        transition: .2s .2s, scale 0s .4s;
+    }
+
+
+
+
+
+/* ========== about me ========== */
  #aboutMe{
 
     #txt {
@@ -257,8 +320,12 @@
         left: 0;
         margin: auto;
     }
+     /*================================================================================*/
+     .profilePhoto > img:hover{
 
-}
+     }
+
+ }
 
 
  /* ========== my works ========== */
@@ -305,11 +372,12 @@
         width: 20vw;
         height: 350px;
 
-        background: white;
+        background: #000000;
         border-radius: 20px;
 
         margin: 32px 32px 32px 32px;
 
+        /*box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;*/
         /*padding: 30px 30px 30px 30px;*/
 
     }
@@ -317,7 +385,7 @@
     .works>h3{
         position: relative;
         top: 10px;
-        color: black;
+        color: white;
         text-align: center;
     }
 
@@ -335,7 +403,7 @@
         position: relative;
         top: 50px;
 
-        color: black;
+        color: white;
         text-align: center;
     }
 
