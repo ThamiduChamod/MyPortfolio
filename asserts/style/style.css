@@ -321,14 +321,16 @@
         margin: auto;
     }
      /*================================================================================*/
-     .profilePhoto > img:hover{
-
-     }
 
  }
 
 
- /* ========== my works ========== */
+
+
+
+
+
+ /* =========================== my works ========================== */
     #myWorks{
         width: 98vw;
         height: 110vh;
@@ -352,6 +354,7 @@
         justify-content: center;
 
         span{
+            margin: 10px;
             color: #43077b;
         }
 
@@ -360,7 +363,7 @@
 
 /* =========   my works hover   ==========*/
 
-    .h2div{
+    .h2divMyWorks{
 
 
         display: flex;
@@ -391,7 +394,7 @@
 
 
 
-section+section{
+    section+section{
         display: grid;
         grid-template-columns: repeat(4,1fr);
 
@@ -403,7 +406,7 @@ section+section{
     .works{
 
         width: 20vw;
-        height: 350px;
+        height: 300px;
 
         background: #000000;
         border-radius: 20px;
@@ -445,4 +448,108 @@ section+section{
         color: black;
         background-color: #43077b;
         filter: drop-shadow(2px 2px 40px #43077b);
+    }
+
+
+
+
+
+
+
+/* =========================   skill   ======================= */
+
+    #skill{
+
+        /*border: 10px solid white;*/
+
+        width: 98vw;
+        height: 90vh;
+
+
+        position: absolute;
+        top: 185vh;
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    #skill>div:first-child{
+        grid-column: 1/6;
+
+        position: relative;
+        top: 0;
+
+        /*border: 10px solid white;*/
+    }
+
+
+
+    #skill>div>h2{
+        color: white;
+        font-size: 50px;
+
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            color: #43077b;
+            margin: 10px;
+        }
+
+        /*border: 10px solid white;*/
+    }
+
+    /* =========   my skill hover   ==========*/
+
+    #skill>div:first-child {
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #skill>div>h2 {
+        --b: 0.1em;   /* the thickness of the line */
+        --c: white; /* the color */
+
+        color: white;
+        padding-block: var(--b);
+        background:
+                linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+                linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+        -webkit-background-clip: text,padding-box;
+        background-clip: text,padding-box;
+        transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+    }
+    #skill>div>h2:hover {
+        --_p: 100%;
+        --_s: .3s;
+    }
+
+
+
+    .skill>.icon{
+        height: 100px;
+        position: relative;
+        top: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /*border: 10px solid white;*/
+        font-size: 100px;
+    }
+
+    .skill>h4{
+        position: relative;
+        top: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
