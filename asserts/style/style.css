@@ -122,6 +122,8 @@
 
 /* ========== about me ========== */
  #aboutMe{
+     display: flex;
+     flex-wrap: wrap;
 
     #txt {
         width: 50vw;
@@ -553,3 +555,43 @@
         align-items: center;
         justify-content: center;
     }
+
+
+
+
+    @media all and (max-width: 1000px) {
+            .header{
+                scale: max(1);
+            }
+    }
+
+
+
+
+
+
+/* =================== Gallery ======================= */
+
+
+     #gallery{
+         width: 98vw;
+         height: 100vh;
+
+
+         position: absolute;
+         top: 280vh;
+     }
+
+     .images{
+         width: 98vw;
+         height: 150vh;
+
+        grid-template-columns: repeat(4,1fr);
+         border: 10px solid blue;
+     }
+
+     .images>img{
+
+         margin: 20px;
+         border-radius: 5px;
+     }
