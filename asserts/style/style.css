@@ -30,8 +30,12 @@
     /*}*/
 
     .header{
+        position: fixed;
+        display: flex;
         width: 100%;
         height: 60px;
+        background: black;
+        z-index: 100;
         /*display: flex;*/
         /*align-items: center;*/
         /*justify-content: center;*/
@@ -51,7 +55,8 @@
     /*}*/
 
     .name{
-        position: absolute;
+        position: fixed;
+        /*position: absolute;*/
         left: 0;
 
         display: flex;
@@ -65,7 +70,7 @@
 
 
     .name>h1{
-
+        position: fixed;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -171,19 +176,28 @@
 
 
 /* ========== about me ========== */
-    #aboutMe{
+    #aboutMe {
+        /*display: flex;*/
+        /*flex-wrap: wrap;*/
+        width: 100%;
+        height: 100vh;
+
+       
+
         display: flex;
-        flex-wrap: wrap;
+        align-items: center;
+        /*justify-content: center;*/
+
 
         #txt {
             width: 50vw;
             height: 100vh;
 
-            position: absolute;
+            position: relative;
             top: 0;
             left: 0;
 
-            /*border: 10px solid white;*/
+            /*border: 1px solid white;*/
             box-sizing: border-box;
         }
 
@@ -195,7 +209,8 @@
             top: 0;
             right: 0;
 
-            /*border: 10px solid white;*/
+
+            /*border: 1px solid white;*/
             box-sizing: border-box;
 
         }
@@ -208,9 +223,10 @@
             /*color: #ff253a;*/
 
         }
-         /*#aboutTxt > h1:hover{*/
-         /*   font-size: 150px;*/
-         /*}*/
+
+        /*#aboutTxt > h1:hover{*/
+        /*   font-size: 150px;*/
+        /*}*/
 
         #aboutTxt h2 {
             position: absolute;
@@ -266,14 +282,14 @@
             font-size: 50px;
             margin: 20px 30px 100px 3px;
 
-            /*!*padding: 10px 10px;*!*/
+            /*/*padding: 10px 10px;*/
 
-            /*!*width: 80px;*!*/
-            /*!*aspect-ratio: 1/1;*!*/
+            /*/*width: 80px;*/
+            /*/*aspect-ratio: 1/1;*/
 
-            /*!*border: 5px solid #43077b;*!*/
-            /*!*border-radius: 100%;*!*/
-            /*!*box-sizing: border-box;*!*/
+            /*/*border: 5px solid #43077b;*/
+            /*/*border-radius: 100%;*/
+            /*/*box-sizing: border-box;*/
 
 
             display: inline-flex;
@@ -290,14 +306,15 @@
             transition: 0.2s linear;
 
         }
-         .fa-brands:hover{
-             scale: 1.3;
-             color: black;
-             background-color: #43077b;
-             filter: drop-shadow(2px 2px 40px #43077b);
-         }
 
-        .social>div+div {
+        .fa-brands:hover {
+            scale: 1.3;
+            color: black;
+            background-color: #43077b;
+            filter: drop-shadow(2px 2px 40px #43077b);
+        }
+
+        .social > div + div {
             width: 50vw;
             height: 50px;
 
@@ -333,7 +350,7 @@
 
         }
 
-        .social > div + div button:hover{
+        .social > div + div button:hover {
             scale: 1.3;
             color: black;
             background-color: white;
@@ -372,9 +389,10 @@
             left: 0;
             margin: auto;
         }
-     /*================================================================================*/
-    }
 
+        /*================================================================================*/
+
+    }
 
 
 
