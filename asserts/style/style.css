@@ -254,14 +254,14 @@
 
         .social {
             position: absolute;
-            top: 60vh;
+            top: 400px;
 
             width: 50vw;
-            height: 100px;
+            height: 39vh;
 
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
+            /*display: flex;*/
+            /*align-items: center;*/
+            /*justify-content: space-around;*/
 
             /*border:1px solid white;*/
 
@@ -269,33 +269,39 @@
 
         .social > div {
             position: absolute;
-            top: 0;
+            top: 30px;
             left: 0;
-            bottom: 0;
+            /*bottom: 0;*/
             right: 0;
-            margin: auto;
+            /*margin: auto;*/
+
+            width: 50vw;
+            height: 80px;
 
             display: flex;
             align-items: center;
             justify-content: space-around;
 
 
-            /*border:1px solid white;*/
+            /*border:1px solid #e40b0b;*/
         }
+
 
         .fa-brands{
             display: inline-flex;
             justify-content: center;
             align-items: center;
 
-            scale: 2;
+            /*scale: 2;*/
+            font-size: 60px;
 
-            width: 30px;
-            aspect-ratio: 1/1;
-            background-color: transparent;
-            border: 0.2rem solid #43077b;
-            border-radius: 50%;
-            color: #43077b;
+            /*width: 80px;*/
+            /*aspect-ratio: 1/1;*/
+            /*background-color: transparent;*/
+            /*border: 0.3rem solid #43077b;*/
+            /*border-radius: 100%;*/
+            color: white;
+            /*margin: 5px;*/
 
         }
 
@@ -334,13 +340,20 @@
         /*}*/
 
         .fa-brands:hover {
-            scale: 3;
-            color: black;
-            background-color: #43077b;
-            filter: drop-shadow(0 0 60px #43077b);
+            scale: 150%;
+            color: #43077b;
+            /*background-color: #43077b;*/
+            /*filter: drop-shadow(0 0 60px #43077b);*/
         }
 
+
+
         .social > div + div {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
             width: 50vw;
             height: 50px;
 
@@ -804,8 +817,17 @@
                 scale: 80%;
             }
             #aboutTxt p{
-                scale: 80%;
+                scale: 70%;
             }
+            .social{
+                scale: 70%;
+                /*border: 1px solid white;*/
+            }
+            .fa-brands{
+                scale: 60%;
+            }
+
+
 
 
 
