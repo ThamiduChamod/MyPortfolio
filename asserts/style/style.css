@@ -13,38 +13,66 @@
     }
 
 
+    /*.header{*/
+    /*    position: fixed;*/
+    /*    width: 100%;*/
+    /*    top: 0;*/
+    /*    left: 0;*/
+    /*    padding: 10px 10%;*/
+    /*    display: flex;*/
+    /*    justify-content: space-between;*/
+    /*    align-items: center;*/
+    /*    z-index: 100;*/
+
+    /*    border-bottom: 1px solid white;*/
+    /*    background: black;*/
+
+    /*}*/
+
     .header{
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        padding: 10px 10%;
+        width: 100vw;
+        height: 60px;
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        z-index: 100;
+        justify-content: center;
 
         border-bottom: 1px solid white;
-        background: black;
-
     }
 
 
+    /*.name{*/
+    /*    margin-right: 10px;*/
+    /*    font-size: 2em;*/
+
+
+
+    /*}*/
+
     .name{
-        margin-right: 10px;
+        border: 1px solid white;
+        width: 50vw;
+        
+
         font-size: 2em;
-
-
-
     }
 
     .header>h3 span{
         color: #43077b;
+
         /*border:2px solid white;*/
 
 
         /*background: rgb(67,5,117);*/
         /*background: linear-gradient(90deg, rgba(67,5,117,1) 0%, rgba(57,13,158,1) 35%, rgba(34,83,177,1) 60%, rgba(0,212,255,1) 100%);*/
+    }
+
+    .navbar{
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        border: 1px solid white;
     }
 
 
