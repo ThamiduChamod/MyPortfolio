@@ -70,7 +70,7 @@
 
 
     }
-    
+
 
 /* ============== Navbar Style from Googel =============== */
     .navbar {
@@ -82,6 +82,7 @@
         color: grey;
         padding: 0;
         margin: 0;
+        background-color: black;
     }
 
     .navbar a {
@@ -133,28 +134,22 @@
 
 /* ========== about me ========== */
     #aboutMe {
-        /*display: flex;*/
-        /*flex-wrap: wrap;*/
+
         width: 100%;
         height: 100vh;
 
 
 
-        display: flex;
-        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         /*justify-content: center;*/
 
 
         #txt {
-            width: 50vw;
+            /*width: 50vw;*/
             height: 100vh;
 
-            position: relative;
-            top: 0;
-            left: 0;
 
-            /*border: 1px solid white;*/
-            box-sizing: border-box;
         }
 
         #photo {
@@ -166,27 +161,23 @@
             right: 0;
 
 
-            /*border: 1px solid white;*/
             box-sizing: border-box;
 
         }
 
         #aboutTxt > h1 {
-            position: absolute;
+            position: relative;
             font-size: 100px;
             top: 15vh;
             left: 50px;
             /*color: #ff253a;*/
 
         }
-
-        /*#aboutTxt > h1:hover{*/
-        /*   font-size: 150px;*/
-        /*}*/
+        
 
         #aboutTxt h2 {
-            position: absolute;
-            top: 30vh;
+            position: relative;
+            top: 30px;
             left: 50px;
 
             font-size: 40px;
@@ -195,10 +186,12 @@
 
         #aboutTxt p {
 
-            width: 50vw;
+            /*width: 50vw;*/
 
-            position: absolute;
-            top: 45vh;
+            position: relative;
+            left: 0;
+            right: 0;
+            top: 90px;
 
 
             font-size: 20px;
@@ -210,10 +203,12 @@
         }
 
         .social {
-            position: absolute;
-            top: 400px;
+            position: relative;
+            top: 80px;
+            left: 0;
+            right: 0;
 
-            width: 50vw;
+            /*width: 50vw;*/
             height: 39vh;
 
             /*display: flex;*/
@@ -228,11 +223,10 @@
             position: absolute;
             top: 30px;
             left: 0;
-            /*bottom: 0;*/
             right: 0;
-            /*margin: auto;*/
 
-            width: 50vw;
+
+            /*width: 50vw;*/
             height: 80px;
 
             display: flex;
@@ -249,52 +243,12 @@
             justify-content: center;
             align-items: center;
 
-            /*scale: 2;*/
             font-size: 60px;
-
-            /*width: 80px;*/
-            /*aspect-ratio: 1/1;*/
-            /*background-color: transparent;*/
-            /*border: 0.3rem solid #43077b;*/
-            /*border-radius: 100%;*/
             color: white;
-            /*margin: 5px;*/
+
 
         }
 
-        /*.fa-brands {*/
-
-        /*    position: relative;*/
-        /*    left: 60px;*/
-        /*    !*right: 80px;*!*/
-
-        /*    font-size: 50px;*/
-        /*    margin: 20px 30px 100px 3px;*/
-
-        /*    !*!*padding: 10px 10px;*!*/
-
-        /*    !*!*width: 80px;*!*/
-        /*    !*!*aspect-ratio: 1/1;*!*/
-
-        /*    !*!*border: 5px solid #43077b;*!*/
-        /*    !*!*border-radius: 100%;*!*/
-        /*    !*!*box-sizing: border-box;*!*/
-
-
-        /*    display: inline-flex;*/
-        /*    justify-content: center;*/
-        /*    align-items: center;*/
-        /*    width: 80px;*/
-        /*    aspect-ratio: 1/1;*/
-        /*    background-color: transparent;*/
-        /*    border: 0.2rem solid #43077b;*/
-        /*    border-radius: 50%;*/
-        /*    color: #43077b;*/
-        /*    !*margin: 5px 15px;*!*/
-        /*    !*font-size: 1.5rem;*!*/
-        /*    transition: 0.2s linear;*/
-
-        /*}*/
 
         .fa-brands:hover {
             scale: 150%;
@@ -311,7 +265,7 @@
             align-items: center;
             justify-content: center;
 
-            width: 50vw;
+            /*width: 50vw;*/
             height: 50px;
 
             position: absolute;
@@ -759,43 +713,296 @@
 
 
 
-        @media screen and (max-width: 655px){
+        /*@media screen and (max-width: 655px){*/
+
+
+        /*    .navbar{*/
+        /*        !*scale: 80%;*!*/
+        /*        font-size: 15px;*/
+        /*        width: 100vw;*/
+        /*        position: absolute;*/
+        /*        left: 0;*/
+        /*    }*/
+        /*    #aboutMe{*/
+        /*        position: relative;*/
+        /*        display: flex;*/
+        /*        !*align-items: center;*!*/
+        /*        justify-content: center;*/
+        /*        !*height: 200vh;*!*/
+
+        /*    }*/
+
+        /*    #txt{*/
+        /*        position: relative;*/
+        /*        top: 0;*/
+        /*        left: 0;*/
+        /*        right: 0;*/
+        /*        width: 100vw;*/
+        /*        !*background-image: url("asserts/images/myPhoto.jpg");*!*/
+        /*        background-image: image("asserts/images/myPhoto.jpg");*/
+        /*        !*background-color: red;*!*/
+        /*        background-blend-mode: screen;*/
+        /*        !*border: 1px solid white;*!*/
+        /*    }*/
+        /*    .abouttxt{*/
+        /*        !*border: 1px solid white;*!*/
+
+        /*    }*/
+
+
+        /*    #aboutTxt > h1{*/
+        /*        scale: 90%;*/
+        /*        !*border: 1px solid white;*!*/
+
+        /*    }*/
+        /*    #aboutTxt h2{*/
+        /*        scale: 80%;*/
+        /*        !*border: 1px solid white;*!*/
+
+        /*    }*/
+        /*    #aboutTxt p{*/
+        /*        position: relative;*/
+        /*        top: 100px;*/
+        /*        !*border: 1px solid white;*!*/
+        /*        scale: 70%;*/
+        /*    }*/
+        /*    .social{*/
+        /*        scale: 70%;*/
+        /*        !*border: 1px solid white;*!*/
+        /*    }*/
+        /*    .fa-brands{*/
+        /*        scale: 60%;*/
+        /*    }*/
+        /*    .profilePhoto{*/
+        /*        scale: 80%;*/
+        /*    }*/
+        /*    .profilePhoto>image{*/
+        /*        scale: 80%;*/
+        /*    }*/
 
 
 
-            #photo{
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            #aboutTxt > h1{
-                scale: 90%;
-            }
-            #aboutTxt h2{
-                scale: 80%;
-            }
-            #aboutTxt p{
-                scale: 70%;
-            }
-            .social{
-                scale: 70%;
-                /*border: 1px solid white;*/
-            }
-            .fa-brands{
-                scale: 60%;
-            }
-            .profilePhoto{
-                scale: 80%;
-            }
-            .profilePhoto>image{
-                scale: 80%;
-            }
 
 
 
 
+        /*}*/
 
 
-
+    /* ======== Small Mobile (320px) ======== */
+    @media (max-width: 320px) {
+        .header {
+            grid-template-columns: 1fr;
+            height: auto;
         }
+
+        .name, .nav, .navbar {
+            width: 100vw;
+            height: auto;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .navbar {
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        #aboutMe {
+            grid-template-columns: 1fr;
+        }
+
+        #photo, #txt {
+            width: 100vw;
+            height: auto;
+            position: static;
+        }
+
+        #aboutTxt > h1 {
+            font-size: 40px;
+            top: 20px;
+            left: 20px;
+        }
+
+        #aboutTxt h2 {
+            top: 90px;
+            left: 20px;
+            font-size: 20px;
+        }
+
+        #aboutTxt p {
+            font-size: 14px;
+            padding: 10px;
+            top: 130px;
+        }
+
+        .social {
+            top: 100px;
+            height: auto;
+        }
+
+        .fa-brands {
+            font-size: 30px;
+        }
+
+        .profilePhoto {
+            width: 200px;
+        }
+
+        .profilePhoto img {
+            width: 200px;
+        }
+    }
+
+
+    /* ======== Medium Mobile (375px) ======== */
+    @media (max-width: 375px) {
+        #aboutTxt > h1 {
+            font-size: 50px;
+        }
+
+        .fa-brands {
+            font-size: 35px;
+        }
+
+        .profilePhoto {
+            width: 250px;
+        }
+
+        .profilePhoto img {
+            width: 250px;
+        }
+    }
+
+    /* ======== Large Mobile (425px) ======== */
+    @media (max-width: 425px) {
+        #aboutTxt > h1 {
+            font-size: 60px;
+        }
+
+        #aboutTxt h2 {
+            font-size: 25px;
+        }
+
+        #aboutTxt p {
+            font-size: 16px;
+        }
+
+        .fa-brands {
+            font-size: 40px;
+        }
+
+        .profilePhoto {
+            width: 280px;
+        }
+
+        .profilePhoto img {
+            width: 280px;
+        }
+    }
+
+
+    /* ======== Tablet (768px) ======== */
+    @media (max-width: 768px) {
+        .header {
+            grid-template-columns: 1fr;
+        }
+
+        .name, .nav, .navbar {
+            width: 100vw;
+        }
+
+        #aboutMe {
+            grid-template-columns: 1fr;
+            height: auto;
+        }
+
+        #photo, #txt {
+            width: 100vw;
+            height: auto;
+            position: static;
+        }
+
+        #aboutTxt > h1 {
+            font-size: 70px;
+            top: 40px;
+            left: 30px;
+        }
+
+        #aboutTxt h2 {
+            top: 120px;
+            left: 30px;
+            font-size: 30px;
+        }
+
+        #aboutTxt p {
+            font-size: 18px;
+            top: 180px;
+            padding: 10px;
+        }
+
+        .social {
+            top: 150px;
+            height: auto;
+        }
+
+        .fa-brands {
+            font-size: 50px;
+        }
+
+        .profilePhoto {
+            width: 300px;
+        }
+
+        .profilePhoto img {
+            width: 300px;
+        }
+    }
+
+
+    /* ======== Laptop (1024px) ======== */
+    @media (max-width: 1024px) {
+        #aboutTxt > h1 {
+            font-size: 80px;
+        }
+
+        #aboutTxt h2 {
+            font-size: 35px;
+        }
+
+        #aboutTxt p {
+            font-size: 20px;
+        }
+
+        .profilePhoto {
+            width: 350px;
+        }
+
+        .profilePhoto img {
+            width: 350px;
+        }
+    }
+
+    /* ======== Laptop Large (1440px) ======== */
+    @media (max-width: 1440px) {
+        #aboutTxt > h1 {
+            font-size: 90px;
+        }
+
+        #aboutTxt h2 {
+            font-size: 38px;
+        }
+
+        .fa-brands {
+            font-size: 55px;
+        }
+
+        .profilePhoto {
+            width: 380px;
+        }
+
+        .profilePhoto img {
+            width: 380px;
+        }
+    }
