@@ -1,15 +1,15 @@
 
     *{
-        margin: 0;
-        padding: 0;
-        box-sizing: content-box;
+        /*margin: 0;*/
+        /*padding: 0;*/
+        /*box-sizing: content-box;*/
 
     }
 
     body{
         background: black;
         color: white;
-        margin: auto;
+        /*margin: auto;*/
     }
 
 
@@ -31,14 +31,16 @@
 
     .header{
         position: fixed;
-        display: flex;
-        width: 100%;
+        /*display: flex;*/
+        width: 100vw;
         height: 60px;
         background: black;
         z-index: 100;
         /*display: flex;*/
         /*align-items: center;*/
         /*justify-content: center;*/
+
+        /*grid-template-columns: repeat(1, 1fr);*/
 
 
 
@@ -57,13 +59,15 @@
     .name{
         position: fixed;
         /*position: absolute;*/
-        left: 0;
+        /*left: 0;*/
 
         display: flex;
         justify-content: center;
 
         width: 50vw;
         height: 60px;
+
+        border: 1px solid white;
 
 
     }
@@ -86,10 +90,21 @@
         /*background: linear-gradient(90deg, rgba(67,5,117,1) 0%, rgba(57,13,158,1) 35%, rgba(34,83,177,1) 60%, rgba(0,212,255,1) 100%);*/
     }
 
+    .header>div+div{
+        width: 50vw;
+        height: 60px;
+
+        position: absolute;
+        right: 0;
+
+        border: 1px solid white;
+    }
+
 
 
     .navbar{
         position: absolute;
+        top: 0;
         right: 0;
 
 
@@ -98,6 +113,8 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+
+        border: 1px solid white;
 
     }
 
@@ -804,6 +821,17 @@
 
         @media screen and (max-width: 655px){
 
+            .header{
+                scale: 90%;
+            }
+            /*.name>h1{*/
+            /*    scale: 50%;*/
+            /*}*/
+            /*.navbar>a{*/
+            /*    scale: 50%;*/
+            /*}*/
+
+
             #photo{
 
                 display: flex;
@@ -825,6 +853,12 @@
             }
             .fa-brands{
                 scale: 60%;
+            }
+            .profilePhoto{
+                scale: 80%;
+            }
+            .profilePhoto>image{
+                scale: 80%;
             }
 
 
