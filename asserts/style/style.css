@@ -13,6 +13,8 @@
     body{
         /*background: black;*/
         background: black;
+        /*background: #833AB4;*/
+        /*background: linear-gradient(36deg, rgba(131, 58, 180, 1) 0%, rgba(46, 20, 63, 1) 10%, rgba(34, 15, 46, 1) 15%, rgba(0, 0, 0, 1) 53%, rgba(36, 80, 0, 1) 85%, rgba(62, 137, 0, 1) 90%, rgba(115, 255, 0, 1) 100%);*/
         /*background: linear-gradient(33deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 0%, rgba(255, 176, 66, 1) 100%);*/
         color: white;
 
@@ -316,37 +318,53 @@
             filter: drop-shadow(0 0 10px white);
         }
 
-        .profilePhoto {
-            /*width: 50vw;*/
+        /*.profilePhoto {*/
+        /*    !*width: 50vw;*!*/
+        /*    position: absolute;*/
+        /*    top: 0;*/
+        /*    left: 0;*/
+        /*    bottom: 0;*/
+        /*    right: 0;*/
+        /*    margin: auto;*/
+
+
+        /*    width: 400px;*/
+        /*    aspect-ratio: 1/1;*/
+
+        /*    box-sizing: content-box;*/
+        /*    border-radius: 100%;*/
+        /*    border: 5px solid white;*/
+        /*    !*box-shadow: 0 0 250px 40px #43077b;*!*/
+        /*    box-shadow:0 0 250px 40px var(--primary-color) ;*/
+        /*    !*background: #833AB4;*!*/
+        /*    !*box-shadow: 0 0 250px 40px (linear-gradient(36deg, rgba(131, 58, 180, 1) 0%, rgba(46, 20, 63, 1) 10%, rgba(34, 15, 46, 1) 15%, rgba(0, 0, 0, 1) 53%, rgba(36, 80, 0, 1) 85%, rgba(62, 137, 0, 1) 90%, rgba(115, 255, 0, 1) 100%));*!*/
+        /*    !*background: #833AB4;*!*/
+        /*    !*background: linear-gradient(36deg, rgba(131, 58, 180, 1) 0%, rgba(46, 20, 63, 1) 10%, rgba(34, 15, 46, 1) 15%, rgba(0, 0, 0, 1) 53%, rgba(36, 80, 0, 1) 85%, rgba(62, 137, 0, 1) 90%, rgba(115, 255, 0, 1) 100%);*!*/
+        /*}*/
+
+        .profilePhoto{
+            width: 30vw;
+            height: 30vw;
             position: absolute;
             top: 0;
             left: 0;
             bottom: 0;
             right: 0;
             margin: auto;
-
-
-            width: 400px;
-            aspect-ratio: 1/1;
-
-            box-sizing: content-box;
             border-radius: 100%;
-            border: 5px solid white;
-            /*box-shadow: 0 0 250px 40px #43077b;*/
-            box-shadow:0 0 250px 40px var(--primary-color) ;
+            background: var(--primary-color);
+
+
         }
 
         .profilePhoto > img {
-            width: 400px;
-            aspect-ratio: 1/1;
-            border-radius: 100%;
+            width: 550px;
+            /*aspect-ratio: 1/1;*/
+            /*border-radius: 100%;*/
 
             position: absolute;
-            top: 0;
-            right: 0;
             bottom: 0;
-            left: 0;
-            margin: auto;
+            left: -30px;
         }
 
         /*================================================================================*/
