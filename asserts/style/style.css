@@ -462,23 +462,43 @@
     }
 
     .works{
-        width: 98vw;
+        width: 95vw;
         height: 450px;
-        margin-bottom: 10px;
-        margin-top: 20px;
+        margin: 2vw;
+        /*margin-bottom: 10px;*/
+        /*margin-top: 20px;*/
 
         /*border:1px solid white;*/
     /*rgba(6, 22, 41, 0.53)*/
     /*    background-color: rgba(249, 228, 0, 0.09);*/
     /*    border-radius: 30px;*/
 
-        border-radius: 30px;
-        background: #212121;
-        box-shadow: 15px 15px 30px rgb(25, 25, 25),
-        -15px -15px 30px rgb(60, 60, 60);
+        /*border-radius: 30px;*/
+        /*background: #212121;*/
+        /*box-shadow: 15px 15px 30px rgb(25, 25, 25),*/
+        /*-15px -15px 30px rgb(60, 60, 60);*/
 
-        position: relative;
-        top: 60px;
+        /*position: relative;*/
+        /*top: 60px;*/
+
+        border-radius: 33px;
+        /*background: linear-gradient(225deg, #353535, #3f3f3f);*/
+        background: #212121;
+        /*box-shadow:  -32px 32px 63px #272727,*/
+        /*32px -32px 63px #4f4f4f;*/
+
+        /*display: grid;*/
+        /*grid-template-columns: repeat(2 ,1fr);*/
+
+        background: none;
+        border: none;
+        outline: none;
+        /*max-width: 190px;*/
+        /*padding: 10px 20px;*/
+        /*font-size: 16px;*/
+        /*border-radius: 9999px;*/
+        box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+        color: #fff;
 
 
     }
@@ -803,7 +823,7 @@
         width: 100%;
         height: 300px;
         animation-name: slide-animation;
-        animation-duration: 24s;
+        animation-duration: 35s;
         animation-iteration-count: infinite;
 
         border-radius: 20px;
@@ -818,7 +838,7 @@
         min-width: 100%;
         height: 300px;
         transition-property: transform;
-        transition-duration: 1s;
+        transition-duration: 5s;
         transition-timing-function: ease-in-out;
 
         border-radius: 20px;
@@ -985,10 +1005,6 @@
 
     }
 
-    #contactme>div>div{
-        border: 1px solid #212ad9;
-        /*height: 60vh;*/
-    }
 
     .contact1{
 
@@ -998,9 +1014,14 @@
         position: absolute;
         top: 60px;
     }
+    .contact1>div>img{
+        /*border: 1px solid #212ad9;*/
+        margin-right: 10px;
+
+    }
     .contact1>div{
         width: 40vw;
-        border: 1px solid darkblue;
+        /*border: 1px solid darkblue;*/
     }
     #contactme>div>div>div{
         display: flex;
@@ -1016,8 +1037,11 @@
 
     .social-media{
 
+        height: 20vh;
         display: flex;
         justify-content: space-around;
+        /*border: 1px solid darkblue;*/
+
     }
 
 
