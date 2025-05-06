@@ -1,6 +1,9 @@
 
     :root{
-        --primary-color: #9BEC00;
+        --primary-color: #F9E400;
+        --font01: "Ribeye Marrow", cursive;
+
+
     }
 
     *{
@@ -384,9 +387,16 @@
         position: absolute;
         top: 100vh;
 
+
+        /*display: grid;*/
+        /*grid-template-rows: repeat(4, 1fr);*/
+
         /*background: #43077b;*/
 
     }
+
+
+
 
     #myWorks>div>h2{
         position: relative;
@@ -408,7 +418,7 @@
 
     }
 
-/* =========   my works hover   ==========*/
+/*!* =========   my works hover   ==========*!*/
 
     .h2divMyWorks{
 
@@ -443,61 +453,75 @@
 
     section+section{
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
 
-    }
-    section+section>div:first-child{
-        grid-column: 1/5;
     }
 
     .works{
-
-        width: 20vw;
+        width: 98vw;
         height: 300px;
 
-        background: #000000;
-        border-radius: 20px;
-
-        margin: 32px 32px 32px 32px;
-
-        /*box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;*/
-        /*padding: 30px 30px 30px 30px;*/
-
+        border:1px solid white;
     }
 
     .works>h3{
-        position: relative;
-        top: 10px;
-        color: white;
-        text-align: center;
+        font-family: var(--font01);
+        font-size: 2rem;
     }
 
-    .works>img{
-        position: relative;
-        top: 20PX;
-        left: 30px;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    /*    section+section>div:first-child{*/
+/*        grid-column: 1/5;*/
+/*    }*/
 
-    .works>p{
-        position: relative;
-        top: 50px;
+/*    .works{*/
 
-        color: white;
-        text-align: center;
-    }
+/*        width: 20vw;*/
+/*        height: 300px;*/
 
-    .works:hover{
-        scale: 1.2;
-        color: black;
-        /*background-color: #43077b;*/
-        background-color: var(--primary-color);
-        /*filter: drop-shadow(2px 2px 40px #43077b);*/
-        filter: drop-shadow(2px 2px 40px var(--primary-color));
-    }
+/*        background: #000000;*/
+/*        border-radius: 20px;*/
+
+/*        margin: 32px 32px 32px 32px;*/
+
+/*        !*box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;*!*/
+/*        !*padding: 30px 30px 30px 30px;*!*/
+
+/*    }*/
+
+/*    .works>h3{*/
+/*        position: relative;*/
+/*        top: 10px;*/
+/*        color: white;*/
+/*        text-align: center;*/
+/*    }*/
+
+/*    .works>img{*/
+/*        position: relative;*/
+/*        top: 20PX;*/
+/*        left: 30px;*/
+
+/*        display: flex;*/
+/*        align-items: center;*/
+/*        justify-content: center;*/
+/*    }*/
+
+/*    .works>p{*/
+/*        position: relative;*/
+/*        top: 50px;*/
+
+/*        color: white;*/
+/*        text-align: center;*/
+/*    }*/
+
+/*    .works:hover{*/
+/*        scale: 1.2;*/
+/*        color: black;*/
+/*        !*background-color: #43077b;*!*/
+/*        background-color: var(--primary-color);*/
+/*        !*filter: drop-shadow(2px 2px 40px #43077b);*!*/
+/*        filter: drop-shadow(2px 2px 40px var(--primary-color));*/
+/*    }*/
 
 
 
