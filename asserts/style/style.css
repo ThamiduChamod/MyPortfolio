@@ -984,6 +984,43 @@
 
 
     }
+
+    #contactme>div>div{
+        border: 1px solid #212ad9;
+        /*height: 60vh;*/
+    }
+
+    .contact1{
+
+        height: 52vh;
+        width: 50vw;
+
+        position: absolute;
+        top: 60px;
+    }
+    .contact1>div{
+        width: 40vw;
+        border: 1px solid darkblue;
+    }
+    #contactme>div>div>div{
+        display: flex;
+        /*justify-content: left;*/
+        align-items: center;
+
+        margin-bottom: 30px;
+
+        position: relative;
+        top: 10vh;
+        left: 5vw;
+    }
+
+    .social-media{
+
+        display: flex;
+        justify-content: space-around;
+    }
+
+
     .card {
         /*box-sizing: border-box;*/
         width: 28vw;
