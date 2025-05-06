@@ -15,7 +15,7 @@
 
     body{
         /*background: black;*/
-        background: black;
+        background: #212121;
         /*background: #833AB4;*/
         /*background: linear-gradient(36deg, rgba(131, 58, 180, 1) 0%, rgba(46, 20, 63, 1) 10%, rgba(34, 15, 46, 1) 15%, rgba(0, 0, 0, 1) 53%, rgba(36, 80, 0, 1) 85%, rgba(62, 137, 0, 1) 90%, rgba(115, 255, 0, 1) 100%);*/
         /*background: linear-gradient(33deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 0%, rgba(255, 176, 66, 1) 100%);*/
@@ -32,7 +32,7 @@
 
         width: 100vw;
         height: 60px;
-        background: black;
+        background: #212121;
         border-bottom: 1px solid white;
 
         display: grid;
@@ -469,8 +469,14 @@
 
         /*border:1px solid white;*/
     /*rgba(6, 22, 41, 0.53)*/
-        background-color: rgba(249, 228, 0, 0.09);
+    /*    background-color: rgba(249, 228, 0, 0.09);*/
+    /*    border-radius: 30px;*/
+
         border-radius: 30px;
+        background: #212121;
+        box-shadow: 15px 15px 30px rgb(25, 25, 25),
+        -15px -15px 30px rgb(60, 60, 60);
+
         position: relative;
         top: 60px;
 
@@ -936,6 +942,20 @@
 
 
         /*}*/
+
+    /*=================================contact me..================================*/
+
+
+    #contactme{
+        width: 98vw;
+        height: 50vh;
+
+        position: absolute;
+        top: 550vh;
+
+
+    }
+
 
 
     /* ======== Small Mobile (320px) ======== */
