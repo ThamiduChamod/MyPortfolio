@@ -460,8 +460,10 @@
     .works{
         width: 98vw;
         height: 400px;
+        margin-bottom: 20px;
+        margin-top: 20px;
 
-        border:1px solid white;
+        /*border:1px solid white;*/
 
         position: relative;
         top: 60px;
@@ -742,12 +744,11 @@
 
     .slider {
         position: relative;
-        top: 65px;
         left: 20px;
-        bottom: 20px;
+        bottom: 0;
 
         width: 49vw;
-        height: 90vh;
+        height: 400px;
         overflow: hidden;
 
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -759,7 +760,7 @@
     .slides {
         /*display: flex;*/
         width: 100%;
-        height: 100%;
+        height: 400px;
         animation-name: slide-animation;
         animation-duration: 24s;
         animation-iteration-count: infinite;
@@ -768,7 +769,7 @@
 
     .slide {
         min-width: 100%;
-        height: 100%;
+        height: 400px;
         transition-property: transform;
         transition-duration: 1s;
         transition-timing-function: ease-in-out;
@@ -777,7 +778,7 @@
 
     .slide img {
         width: 100%;
-        height: 100%;
+        height: 400px;
         object-fit: cover;
 
     }
