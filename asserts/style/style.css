@@ -385,7 +385,7 @@
         height: 110vh;
 
         position: absolute;
-        top: 100vh;
+        top: 110vh;
 
 
         /*display: grid;*/
@@ -400,14 +400,14 @@
 
     #myWorks>div>h2{
         position: relative;
-        top: 10px;
+        top: 50px;
         color: white;
 
         font-size: 50px;
 
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
 
         span{
             margin: 10px;
@@ -453,31 +453,62 @@
 
     section+section{
         display: grid;
-        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: repeat(1,1fr);
 
     }
 
     .works{
         width: 98vw;
-        height: 300px;
+        height: 400px;
 
         border:1px solid white;
+
+        position: relative;
+        top: 60px;
+    }
+    .works>div+div{
+        width: 50vw;
+        height: 500px;
+
+        position: absolute;
+        right: 0;
+
+        /*border: 1px solid red;*/
+    }
+    .works>:first-child{
+        width: 48vw;
+        height: 400px;
+
+        position: absolute;
+        left: 0;
+
+        /*display: grid;*/
+        /*grid-template-columns: repeat(1, 1fr);*/
+
+
+        /*border: 1px solid #F9E400;*/
     }
 
-    .works>h3{
+    .works>:first-child>h3{
         font-family: var(--font01);
-        font-size: 2rem;
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: space-around;
+
+        position: relative;
+        top: 15vh;
+    }
+    .works>:first-child>p{
+        position:relative;
+        top: 20vh;
+        width: 25vw;
+        left:12vw ;
+        text-align: center;
+
+
     }
 
-    /*.works>div{*/
-    /*    width: 48vw;*/
-    /*    height: 300px;*/
 
-    /*    position: absolute;*/
-    /*    right: 0;*/
-
-    /*    border: 1px solid red;*/
-    /*}*/
 
 
     /*    section+section>div:first-child{*/
