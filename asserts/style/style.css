@@ -21,6 +21,8 @@
         /*background: linear-gradient(33deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 0%, rgba(255, 176, 66, 1) 100%);*/
         color: white;
 
+        position: absolute;
+
     }
 
 
@@ -382,7 +384,7 @@
  /* =========================== my works ========================== */
     #myWorks{
         width: 98vw;
-        height: 110vh;
+        height: 350vh;
 
         position: absolute;
         top: 110vh;
@@ -392,6 +394,8 @@
         /*grid-template-rows: repeat(4, 1fr);*/
 
         /*background: #43077b;*/
+
+        /*border: 1px solid rebeccapurple;*/
 
     }
 
@@ -459,55 +463,76 @@
 
     .works{
         width: 98vw;
-        height: 400px;
-        margin-bottom: 20px;
+        height: 450px;
+        margin-bottom: 10px;
         margin-top: 20px;
 
         /*border:1px solid white;*/
-
+    /*rgba(6, 22, 41, 0.53)*/
+        background-color: rgba(249, 228, 0, 0.09);
+        border-radius: 30px;
         position: relative;
         top: 60px;
+
+
     }
+
+
+
+
+        .works>h3{
+            font-family: var(--font01);
+            width: 90vw;
+            position: relative;
+            top: 20px;
+            left: 100px;
+            font-size: 1.8rem;
+            display: flex;
+        /*justify-content: space-around;*/
+            justify-items: left;
+
+            /*border: 1px solid purple;*/
+
+
+
+        }
+
     .works>div+div{
-        width: 50vw;
+        width: 48vw;
         height: 400px;
 
         position: absolute;
-        right: 0;
+        right: 10px;
 
         /*border-radius:20% ;*/
 
         /*border: 1px solid red;*/
     }
-    .works>:first-child{
-        width: 48vw;
-        height: 400px;
 
-        position: absolute;
-        left: 0;
+    /*.works>:first-child{*/
+    /*    width: 48vw;*/
+    /*    top: 50px;*/
+    /*    height: 300px;*/
+    /*    color: #ff253a;*/
+    /*    position: absolute;*/
+    /*    left: 0;*/
 
-        /*display: grid;*/
-        /*grid-template-columns: repeat(1, 1fr);*/
+    /*    !*display: grid;*!*/
+    /*    !*grid-template-columns: repeat(1, 1fr);*!*/
 
 
-        /*border: 1px solid #F9E400;*/
-    }
+    /*    border: 1px solid #F9E400;*/
+    /*}*/
 
-    .works>:first-child>h3{
-        font-family: var(--font01);
-        font-size: 1.8rem;
-        display: flex;
-        justify-content: space-around;
 
-        position: relative;
-        top: 15vh;
-    }
-    .works>:first-child>p{
+    .works>div>p{
         position:relative;
         top: 20vh;
         width: 25vw;
         left:12vw ;
         text-align: center;
+
+        /*background-color: #ff253a;*/
 
 
     }
@@ -584,8 +609,8 @@
         height: 90vh;
 
 
-        position: absolute;
-        top: 185vh;
+        position: relative;
+        top: 360vh;
 
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -746,17 +771,22 @@
 
     .slider {
         position: relative;
-        /*left: 20px;*/
+        right: 20px;
         bottom: 0;
 
-        width: 50vw;
-        height: 400px;
+
+
+        width: 48vw;
+        height: 300px;
         overflow: hidden;
 
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         /*border-radius: 20px;*/
 
         border-radius: 20px;
+
+        /*border: 1px solid purple;*/
+
 
 
 
@@ -765,32 +795,40 @@
     .slides {
         /*display: flex;*/
         width: 100%;
-        height: 400px;
+        height: 300px;
         animation-name: slide-animation;
         animation-duration: 24s;
         animation-iteration-count: infinite;
 
         border-radius: 20px;
 
+        /*border: 1px solid purple;*/
+
+
 
     }
 
     .slide {
         min-width: 100%;
-        height: 400px;
+        height: 300px;
         transition-property: transform;
         transition-duration: 1s;
         transition-timing-function: ease-in-out;
 
         border-radius: 20px;
 
+        /*border: 1px solid purple;*/
+
+
 
     }
 
     .slide img {
         width: 100%;
-        height: 400px;
+        height: 300px;
         object-fit: cover;
+
+
 
 
         /*border-radius: 10%;*/
