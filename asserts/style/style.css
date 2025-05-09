@@ -459,6 +459,7 @@
         width: 98vw;
         height: 350vh;
         color: var(--text-color);
+        background: rgba(179, 178, 178, 0.49);
 
         /*position: absolute;*/
         /*top: 110vh;*/
@@ -469,7 +470,7 @@
 
         /*background: #43077b;*/
 
-        border: 1px solid rebeccapurple;
+        /*border: 1px solid rebeccapurple;*/
 
     }
 
