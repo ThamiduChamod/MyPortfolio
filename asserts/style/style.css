@@ -268,32 +268,35 @@
         background: var(--primary-color);
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
 
     }
 
-
-    #photo {
-
-        /*position: absolute;*/
-        width: 40vw;
-        height: 60vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        border: 1px solid saddlebrown;
-    }
     .profilePhoto{
 
-        width: 30vw;
-        height: 50vh;
+        width: 40vw;
+        height: 70vh;
 
         background: white;
 
+        display: flex;
+        justify-content: center;
+
+
+
 
     }
+    .profilePhoto>img{
+        width: 20vw;
+       /*scale: 70%;*/
+        position:relative;
+        top: 10px;
+
+
+
+    }
+
 
 
 
@@ -307,7 +310,6 @@
             display: flex;
             justify-content: space-around;
         }
-
         .social-btn {
             cursor: pointer;
             height: 60px;
@@ -324,7 +326,6 @@
             align-items: center;
             justify-content: center;
         }
-
         .social-btn span {
             width: 0;
             overflow: hidden;
@@ -332,7 +333,6 @@
             text-align: center;
              color: white;
         }
-
         #facebook:hover{
             background: #1877F2;
         }
@@ -366,24 +366,18 @@
         #twitter i:hover{
             color: white;
         }
-
-
-
         .social-btn:hover {
             width: 150px;
             border-radius: 5px;
 
         }
-
         .social-btn:hover span {
             padding: 2px;
             width: max-content;
         }
-
         #facebook i{
             color: #1877F2;
         }
-
         #facebook>span{
             background: #1877F2;
         }
@@ -402,14 +396,12 @@
             /*        #833ab4,#fd1d1d,#fcb045*/
             /*);*/
         }
-
         #twitter i{
             color: #000000;
         }
         #twitter>span{
             background: #000000;
         }
-
         #linkedin i{
             color: #0e76a8;
         }
@@ -422,9 +414,6 @@
         #whatsapp>span{
             background:  #25d366;
         }
-
-
-
         .social-links+div{
 
             position: relative;
