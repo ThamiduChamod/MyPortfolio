@@ -157,20 +157,23 @@
         transition: .2s .2s, scale 0s .4s;
     }
 
+
+
 /*  ========================== Home =============================  */
 
     .home{
 
         /*position: relative;*/
         width: 100vw;
-        /*height: 100vh;*/
+        height: 100vh;
         /*object-fit: contain;*/
 
         /*display: flex;*/
         /*align-items: center;*/
         /*justify-content: center;*/
+        border: 1px solid hotpink;
     }
-    div>img{
+    .home>img{
         position: absolute;
         top: -100px;
         width: 100vw;
@@ -189,7 +192,7 @@
 
         width: 100vw;
         height: 100vh;
- 
+
         display: flex;
         align-items: center;
         justify-content: center;
@@ -210,7 +213,10 @@
 /* ========== about me ========== */
     #aboutMe {
 
-        width: 100%;
+        position: relative;
+        top: -100px;
+
+        width: 100vw;
         height: 100vh;
 
 
