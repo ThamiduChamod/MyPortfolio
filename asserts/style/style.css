@@ -1,8 +1,9 @@
 
     :root{
-        --primary-color: #007df9;
-        --font01: "Ribeye Marrow", cursive;
-
+        --primary-color: #dcdcdc;
+        --boder-color:saddlebrown;
+        --font01: "Oswald", cursive;
+        --font02:  "Lato",cursive;
 
     }
 
@@ -20,6 +21,7 @@
         /*background: linear-gradient(36deg, rgba(131, 58, 180, 1) 0%, rgba(46, 20, 63, 1) 10%, rgba(34, 15, 46, 1) 15%, rgba(0, 0, 0, 1) 53%, rgba(36, 80, 0, 1) 85%, rgba(62, 137, 0, 1) 90%, rgba(115, 255, 0, 1) 100%);*/
         /*background: linear-gradient(33deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 0%, rgba(255, 176, 66, 1) 100%);*/
         color: white;
+        background: var(--primary-color);
 
         position: absolute;
 
@@ -44,6 +46,27 @@
         justify-items: center;
         align-items: center;
     }
+    header>div{
+        /*border: 1px solid violet;*/
+        height: 10vh;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        font-size: 1vw;
+
+
+    }
+    .nav{
+        width: 60vw;
+
+
+    }
+    .navbar{
+        width: 50vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
 
 
     .name{
@@ -74,21 +97,7 @@
         /*background: linear-gradient(90deg, rgba(67,5,117,1) 0%, rgba(57,13,158,1) 35%, rgba(34,83,177,1) 60%, rgba(0,212,255,1) 100%);*/
     }
 
-    .nav {
-        width: 50vw;
-        height: 60px;
 
-    }
-
-    .navbar{
-        width: 50vw;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-
-
-    }
 
 
 /* ============== Navbar Style from Googel =============== */
@@ -146,6 +155,52 @@
     .navbar:hover a:hover ~ a:before {
         translate: -100% 0;
         transition: .2s .2s, scale 0s .4s;
+    }
+
+/*  ========================== Home =============================  */
+
+    .home{
+
+        /*position: relative;*/
+        width: 100vw;
+        /*height: 100vh;*/
+        /*object-fit: contain;*/
+
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+    }
+    div>img{
+        position: absolute;
+        top: -100px;
+        width: 100vw;
+        height: auto;
+        /*height: 100%;*/
+        /*object-fit: contain;*/
+
+    }
+    .glass{
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+
+        width: 100vw;
+        height: 100vh;
+ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: rgba(46, 46, 46, 0.51);
+        box-shadow: 0 4px 30px rgba(43, 43, 43, 0.1);
+        backdrop-filter: blur(4.9px);
+        -webkit-backdrop-filter: blur(4.9px);
+        /*border: 1px solid rgba(78, 78, 78, 0.41);*/
+
+        /*border: 1px solid firebrick;*/
     }
 
 
