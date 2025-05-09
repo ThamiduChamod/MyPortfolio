@@ -2,6 +2,7 @@
 
 :root{
         --primary-color: #dcdcdc;
+        --text-color: #151515;
         --boder-color:saddlebrown;
         --font01: "Oswald", cursive;
         --font02:  "Lato",cursive;
@@ -21,7 +22,7 @@
         /*background: #833AB4;*/
         /*background: linear-gradient(36deg, rgba(131, 58, 180, 1) 0%, rgba(46, 20, 63, 1) 10%, rgba(34, 15, 46, 1) 15%, rgba(0, 0, 0, 1) 53%, rgba(36, 80, 0, 1) 85%, rgba(62, 137, 0, 1) 90%, rgba(115, 255, 0, 1) 100%);*/
         /*background: linear-gradient(33deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 0%, rgba(255, 176, 66, 1) 100%);*/
-        color: white;
+        color: var(--text-color);
         background: var(--primary-color);
 
         position: absolute;
@@ -259,44 +260,53 @@
 
 
 /* ========== about me ========== */
-    #aboutMe {
-
+    .about{
         position: relative;
+
         width: 100vw;
         height: 100vh;
-        border: 1px solid lawngreen;
+
         background: var(--primary-color);
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: space-around;
-        align-items: center;
-
     }
 
-    .profilePhoto{
-
-        width: 40vw;
-        height: 70vh;
-
-        background: white;
-
+    .about>div{
+        width: 100vw;
+        height: 100vh;
         display: flex;
-        justify-content: center;
+        grid-template-columns: repeat(2 ,1fr);
 
-
-
-
+        align-items: center;
+        justify-content: space-around;
     }
-    .profilePhoto>img{
+
+    .photo-card{
+        width: 30vw;
+        height: 65vh;
+        background: white;
+        border-radius: 10px;
+        /*display: flex;*/
+        /*justify-content: center;*/
+    }
+    .photo-card>img{
+        position: relative;
         width: 20vw;
-       /*scale: 70%;*/
-        position:relative;
-        top: 10px;
-
-
+        border-radius: 10px;
+        top: 50px;
+        left: 5vw;
+        /*right: 0;*/
+    }
+    .photo-card+div{
+        width: 60vw;
+        height: 60vh;
+        background: rgba(170, 170, 170, 0.55);
+        box-shadow: 0 4px 30px rgba(85, 85, 85, 0.05);
+        backdrop-filter: blur(4.9px);
+        -webkit-backdrop-filter: blur(4.9px);
+        border-radius: 20px;
+    }
+    .card+div>p{
 
     }
-
 
 
 
@@ -447,6 +457,7 @@
         position: relative;
         width: 98vw;
         height: 350vh;
+        color: var(--text-color);
 
         /*position: absolute;*/
         /*top: 110vh;*/
@@ -457,7 +468,7 @@
 
         /*background: #43077b;*/
 
-        /*border: 1px solid rebeccapurple;*/
+        border: 1px solid rebeccapurple;
 
     }
 
@@ -467,7 +478,7 @@
     #myWorks>div>h2{
         position: relative;
         top: 50px;
-        color: white;
+        color: var(--text-color);
 
         font-size: 50px;
 
@@ -477,7 +488,7 @@
 
         span{
             margin: 10px;
-            color: var(--primary-color);
+            color: var(--text-color);
             /*color: #43077b;*/
         }
 
@@ -496,7 +507,7 @@
 
     #myWorks>div>h2 {
         --b: 0.1em;   /* the thickness of the line */
-        --c: white; /* the color */
+        --c: var(--text-color); /* the color */
 
         color: white;
         padding-block: var(--b);
@@ -570,6 +581,7 @@
 
         .works>h3{
             font-family: var(--font01);
+            color: var(--text-color);
             width: 90vw;
             position: relative;
             top: 20px;
@@ -615,6 +627,7 @@
 
     .works>div>p{
         position:relative;
+        color: var(--text-color);
         top: 20vh;
         width: 25vw;
         left:12vw ;
@@ -693,12 +706,14 @@
 
         /*border: 10px solid white;*/
 
+
+
         width: 98vw;
         height: 90vh;
 
 
         position: relative;
-        top: 360vh;
+        top:0;
 
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -716,7 +731,7 @@
 
 
     #skill>div>h2{
-        color: white;
+        color: var(--text-color);
         font-size: 50px;
 
         position: relative;
@@ -727,7 +742,7 @@
 
         span{
             /*color: #43077b;*/
-            color: var(--primary-color);
+            color: var(--text-color);
             margin: 10px;
         }
 
@@ -948,83 +963,6 @@
     }
 
 
-
-
-        /*@media screen and (max-width: 655px){*/
-
-
-        /*    .navbar{*/
-        /*        !*scale: 80%;*!*/
-        /*        font-size: 15px;*/
-        /*        width: 100vw;*/
-        /*        position: absolute;*/
-        /*        left: 0;*/
-        /*    }*/
-        /*    #aboutMe{*/
-        /*        position: relative;*/
-        /*        display: flex;*/
-        /*        !*align-items: center;*!*/
-        /*        justify-content: center;*/
-        /*        !*height: 200vh;*!*/
-
-        /*    }*/
-
-        /*    #txt{*/
-        /*        position: relative;*/
-        /*        top: 0;*/
-        /*        left: 0;*/
-        /*        right: 0;*/
-        /*        width: 100vw;*/
-        /*        !*background-image: url("asserts/images/myPhoto.jpg");*!*/
-        /*        background-image: image("asserts/images/myPhoto.jpg");*/
-        /*        !*background-color: red;*!*/
-        /*        background-blend-mode: screen;*/
-        /*        !*border: 1px solid white;*!*/
-        /*    }*/
-        /*    .abouttxt{*/
-        /*        !*border: 1px solid white;*!*/
-
-        /*    }*/
-
-
-        /*    #aboutTxt > h1{*/
-        /*        scale: 90%;*/
-        /*        !*border: 1px solid white;*!*/
-
-        /*    }*/
-        /*    #aboutTxt h2{*/
-        /*        scale: 80%;*/
-        /*        !*border: 1px solid white;*!*/
-
-        /*    }*/
-        /*    #aboutTxt p{*/
-        /*        position: relative;*/
-        /*        top: 100px;*/
-        /*        !*border: 1px solid white;*!*/
-        /*        scale: 70%;*/
-        /*    }*/
-        /*    .social{*/
-        /*        scale: 70%;*/
-        /*        !*border: 1px solid white;*!*/
-        /*    }*/
-        /*    .fa-brands{*/
-        /*        scale: 60%;*/
-        /*    }*/
-        /*    .profilePhoto{*/
-        /*        scale: 80%;*/
-        /*    }*/
-        /*    .profilePhoto>image{*/
-        /*        scale: 80%;*/
-        /*    }*/
-
-
-
-
-
-
-
-        /*}*/
-
     /*=================================contact me..================================*/
 
 
@@ -1032,8 +970,8 @@
         width: 98vw;
         height: 70vh;
 
-        position: absolute;
-        top: 550vh;
+        position: relative;
+        top: 0;
 
         display: flex;
         align-items: center;
@@ -1129,10 +1067,10 @@
         padding: 0.7em 1.7em;
         /*font-size: 18px;*/
         border-radius: 0.5em;
-        background: #212121;
+        background: var(--primary-color);
         border: 1px solid #212121;
         transition: all 0.3s;
-        box-shadow: 6px 6px 12px #000, -6px -6px 12px #2f2f2f;
+        box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #2f2f2f;
 
         position: absolute;
         right: 100px;
@@ -1161,7 +1099,7 @@
         padding: 10px 20px;
         /*font-size: 16px;*/
         /*border-radius: 9999px;*/
-        box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+        box-shadow: inset 2px 5px 10px rgb(0, 0, 0);
         color: #fff;
 
     }
@@ -1181,13 +1119,13 @@
         background: #212121;
         border: 1px solid #212121;
         transition: all 0.3s;
-        box-shadow: 6px 6px 12px #000, -6px -6px 12px #2f2f2f;
+        box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #2f2f2f;
 
     }
 
     button:active {
-        color: #666;
-        box-shadow: inset 4px 4px 12px #000, inset -4px -4px 12px #1f1f1f;
+        color: white;
+        box-shadow: inset 4px 4px 12px #ffffff, inset -4px -4px 12px #1f1f1f;
     }
 
 
