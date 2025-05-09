@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Grechen+Fuemen&family=Noto+Sans+TC:wght@100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Ribeye+Marrow&display=swap');
 
-    :root{
+:root{
         --primary-color: #dcdcdc;
         --boder-color:saddlebrown;
         --font01: "Oswald", cursive;
@@ -205,6 +206,53 @@
 
         /*border: 1px solid firebrick;*/
     }
+.glass>div{
+    border: 2px solid var(--boder-color);
+
+}
+
+.glass>div>h1{
+
+    color: white;
+    margin: 0;
+
+    font-family: var(--font02);
+
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+
+}
+
+/*.glass>div>:first-child{*/
+/*    font-size: 2rem;*/
+
+/*    display: flex;*/
+/*    justify-content: left;*/
+/*}*/
+/*.glass>div>:nth-child(2){*/
+/*    font-size: 1.5rem;*/
+
+/*    display: flex;*/
+/*    justify-content: left;*/
+/*}*/
+
+.glass>div>:nth-child(3){
+    font-size: 3vw;
+    letter-spacing: 5vw;
+
+    display: flex;
+    justify-content: left;
+}
+
+.glass>div>:nth-child(4){
+    font-size: 8vw;
+    letter-spacing: 2vw;
+    font-family: var(--font01);
+
+
+}
+
 
 
 
