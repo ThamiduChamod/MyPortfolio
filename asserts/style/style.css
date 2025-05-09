@@ -27,17 +27,22 @@
 
 
     .header{
+        width: 100vw;
+        height: 10vh;
+        background: rgba(78, 78, 78, 0.59);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(4.9px);
+        -webkit-backdrop-filter: blur(4.9px);
+        border: 1px solid rgba(78, 78, 78, 0.41);
         position: fixed;
         z-index: 100;
 
-        width: 100vw;
-        height: 60px;
-        background: #212121;
-        border-bottom: 1px solid white;
-
+        top: 0;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
+        justify-items: center;
+        align-items: center;
     }
 
 
