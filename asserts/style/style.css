@@ -226,12 +226,16 @@
 
 }
 
-/*.glass>div>:first-child{*/
-/*    font-size: 2rem;*/
+.glass>div>:first-child{
+    font-size: 2rem;
 
-/*    display: flex;*/
-/*    justify-content: left;*/
-/*}*/
+    display: flex;
+    justify-content: left;
+
+    border: 1px solid saddlebrown;
+    width: 10vw;
+    /*border-bottom: ;*/
+}
 /*.glass>div>:nth-child(2){*/
 /*    font-size: 1.5rem;*/
 
