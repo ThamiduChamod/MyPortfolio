@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Grechen+Fuemen&family=Noto+Sans+TC:wght@100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Ribeye+Marrow&display=swap');
 
-:root{
+    :root{
         --primary-color: #dcdcdc;
         --text-color: #151515;
         --boder-color:saddlebrown;
@@ -27,6 +27,8 @@
         background: var(--primary-color);
 
         position: absolute;
+        margin: 0;
+        overflow-x: hidden;
 
     }
 
@@ -166,7 +168,7 @@
 
     .home{
 
-        /*position: relative;*/
+        /*position: absolute;*/
         width: 100vw;
         /*height: 100vh;*/
         /*object-fit: contain;*/
@@ -176,16 +178,18 @@
         /*justify-content: center;*/
         /*border: 1px solid hotpink;*/
     }
-    .home>img{
+    .home > img {
         position: absolute;
-        top: -100px;
+        top: 0;
+        left: 0;
         width: 100vw;
-        height: auto;
-        /*height: 100%;*/
-        /*object-fit: contain;*/
-
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
     }
-    .glass{
+
+
+.glass{
         position: relative;
         top: 0;
         left: 0;
@@ -208,56 +212,56 @@
 
         /*border: 1px solid firebrick;*/
     }
-.glass>div{
-    /*border: 2px solid var(--boder-color);*/
+    .glass>div{
+        /*border: 2px solid var(--boder-color);*/
 
-}
+    }
 
-.glass>div>h1{
+    .glass>div>h1{
 
-    color: white;
-    margin: 0;
+        color: white;
+        margin: 0;
 
-    font-family: var(--font02);
+        font-family: var(--font02);
 
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
 
-}
+    }
 
-.glass>div>:first-child{
-    font-size: 2rem;
+    .glass>div>:first-child{
+        font-size: 2rem;
 
-    display: flex;
-    justify-content: left;
+        display: flex;
+        justify-content: left;
 
-    /*border: 1px solid saddlebrown;*/
-    width: 10vw;
-    /*border-bottom: ;*/
-}
-/*.glass>div>:nth-child(2){*/
-/*    font-size: 1.5rem;*/
+        /*border: 1px solid saddlebrown;*/
+        width: 10vw;
+        /*border-bottom: ;*/
+    }
+    /*.glass>div>:nth-child(2){*/
+    /*    font-size: 1.5rem;*/
 
-/*    display: flex;*/
-/*    justify-content: left;*/
-/*}*/
+    /*    display: flex;*/
+    /*    justify-content: left;*/
+    /*}*/
 
-.glass>div>:nth-child(3){
-    font-size: 3vw;
-    letter-spacing: 5vw;
+    .glass>div>:nth-child(3){
+        font-size: 3vw;
+        letter-spacing: 5vw;
 
-    display: flex;
-    justify-content: left;
-}
+        display: flex;
+        justify-content: left;
+    }
 
-.glass>div>:nth-child(4){
-    font-size: 8vw;
-    letter-spacing: 2vw;
-    font-family: var(--font01);
+    .glass>div>:nth-child(4){
+        font-size: 8vw;
+        letter-spacing: 2vw;
+        font-family: var(--font01);
 
 
-}
+    }
 
 
 /*==============================================  ANIMATION DEVELOPER======================================================*/
@@ -407,6 +411,7 @@
 /* ========== about me ========== */
     .about{
         position: relative;
+        top: 100px;
 
         width: 100vw;
         height: 100vh;
@@ -417,7 +422,7 @@
     .about>div{
         width: 100vw;
         height: 100vh;
-        display: flex;
+        display: grid;
         grid-template-columns: repeat(2 ,1fr);
 
         align-items: center;

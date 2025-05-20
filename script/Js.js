@@ -2,7 +2,7 @@
     function imageOverlay() {
 
         var imgHeight = $('#mainImg').height();
-        $('#overlayDiv').height(imgHeight-100);
+        $('#overlayDiv').height(imgHeight);
         console.log(imgHeight);
 
     }
