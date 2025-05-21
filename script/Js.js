@@ -5,7 +5,7 @@
         $('#overlayDiv').height(imgHeight);
         console.log(imgHeight);
         var imgWidth = $('#mainImg').width();
-        $('#overlayDiv').width(imgWidth-10);
+        $('#overlayDiv').width(imgWidth-2);
         console.log(imgWidth);
 
     }
