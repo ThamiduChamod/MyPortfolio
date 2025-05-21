@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Grechen+Fuemen&family=Noto+Sans+TC:wght@100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Ribeye+Marrow&display=swap');
 
     :root{
-        --primary-color: #dcdcdc;
+        --primary-color:#e8e8e8;
         --text-color: #151515;
         --boder-color:saddlebrown;
         --background-color: rgba(39, 39, 39, 0.47);
@@ -12,6 +12,9 @@
 *{
     box-sizing: border-box;
     /*font-family: var(--font01);*/
+}
+body{
+    background: var(--primary-color);
 }
 
 .header{
@@ -122,7 +125,28 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    box-sizing: border-box;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    cursor: pointer;
+    transition: all 0.5s;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
 }
+.photo-card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.photo-card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+
 .about-image{
     width: 25vw;
 }
@@ -131,12 +155,32 @@
     height: 75vh;
     text-align: center;
     margin-right: 20px;
+    padding-left: 2vw;
+    padding-right: 2vw;;
 
+    box-sizing: border-box;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    cursor: pointer;
+    transition: all 0.5s;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+
+}
+.text-card:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+}
+
+.text-card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
 }
 .about-btns{
     display: flex;
-    /*justify-content: space-around;*/
-    background: white;
 }
 .about-btns>button{
     width: 10vw;
