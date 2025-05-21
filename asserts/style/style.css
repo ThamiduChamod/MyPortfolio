@@ -438,7 +438,7 @@ body{
 
 
     #contactme{
-        width: 98vw;
+        width: 100%;
         height: 70vh;
 
         position: relative;
@@ -451,81 +451,73 @@ body{
     }
 
     #contactme>div{
-        width: 90vw;
+        width: 90%;
         height: 60vh;
-
-        border-radius: 33px;
-        /*background: linear-gradient(225deg, #353535, #3f3f3f);*/
-        background: #212121;
-        /*box-shadow:  -32px 32px 63px #272727,*/
-        /*32px -32px 63px #4f4f4f;*/
-
+        border-radius: 30px;
+        background: #e0e0e0;
+        box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
         display: grid;
-        grid-template-columns: repeat(2 ,1fr);
-
-        background: none;
-        border: none;
-        outline: none;
-        /*max-width: 190px;*/
-        padding: 10px 20px;
-        /*font-size: 16px;*/
-        /*border-radius: 9999px;*/
-        box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-        color: #fff;
-
+        align-items: center;
+        grid-template-columns: repeat(2,1fr);
 
     }
 
 
     .contact1{
-
-        height: 52vh;
+        /*height: 52vh;*/
         width: 50vw;
-
-        position: absolute;
-        top: 60px;
-    }
-    .contact1>div>img{
-        /*border: 1px solid #212ad9;*/
-        margin-right: 10px;
+        padding-left: 2vw;
+        /*border: 1px solid rebeccapurple;*/
 
     }
     .contact1>div{
-        width: 40vw;
-        /*border: 1px solid darkblue;*/
-    }
-    #contactme>div>div>div{
         display: flex;
-        /*justify-content: left;*/
-        align-items: center;
 
-        margin-bottom: 30px;
+    }
+    .contact1>div>img{
+        width: 4vw;
+        margin-right: 10px;
 
-        position: relative;
-        top: 10vh;
-        left: 5vw;
     }
 
     .social-media{
-
         height: 20vh;
         display: flex;
         justify-content: space-around;
         /*border: 1px solid darkblue;*/
-
+    }
+    .social-media>i{
+        font-size: 5vw;
     }
 
 
-    .contactme-text-card{
-        width: 28vw;
-        height: 50vh;
-    }
+.contactme-text-card{
+    width: 80%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+
+}
+.cantact-text-card-continer{
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(1,1fr);
+}
+
 .coolinput {
+
     display: flex;
     flex-direction: column;
-    width: fit-content;
+    width: 100%;
     position: static;
-    max-width: 240px;
+    max-width: 640px;
+    margin-top: 3vh;
+
+
 }
 
 .coolinput label.text {
@@ -541,42 +533,86 @@ body{
 }
 
 .coolinput input[type="text"].input {
-    padding: 11px 10px;
+    padding: 11px 2vw;
     font-size: 0.75rem;
     border: 2px #000000 solid;
     border-radius: 5px;
     background: #e8e8e8;
+    width: 100%;
 }
 
 .coolinput input[type="text"].input:focus {
     outline: none;
 }
+#message-input{
+    height: 10vh;
+}
 
 
-/*.card>input+input+input{*/
-/*        height: 15vh;*/
-/*    }*/
 
-    .card>button{
-        /*border-radius: 20px;*/
-        margin: 10px;
+.contact-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button {
+    font-family: inherit;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #4dc7d9 0%,#66a6ff 100%);
+    color: white;
+    padding: 0.8em 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
 
-        color: #fff;
-        padding: 0.7em 1.7em;
-        font-size: 18px;
-        border-radius: 0.5em;
-        background: #212121;
-        border: 1px solid #212121;
-        transition: all 0.3s;
-        box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #2f2f2f;
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
 
-    }
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
 
-    button:active {
-        color: white;
-        box-shadow: inset 4px 4px 12px #ffffff, inset -4px -4px 12px #1f1f1f;
-    }
+button span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+}
 
+button svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+}
+
+button .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+}
+
+button:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+button:hover svg {
+    transform: rotate(45deg);
+}
 
 
 
