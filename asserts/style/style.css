@@ -53,6 +53,65 @@ body{
 }
 
 
+/*============================ navbar ==============================*/
+    .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #f4f3f3;
+        padding: 0;
+        margin: 0;
+        /*background-color: black;*/
+    }
+
+    .navbar a {
+        position: relative;
+        padding: 0 .5em .25em;
+        cursor: pointer;
+        color: #e3e2e2;
+        text-decoration: none;
+        transition: .3s;
+        overflow: hidden;
+    }
+
+    .navbar a:hover {
+        color: #fff;
+    }
+
+    .navbar a:before {
+        content: "";
+        position: absolute;
+        inset: calc(100% - 3px) 0 0 0; /* 3px is the thickness of the underline */
+        /*background: #ce4f20;*/
+        /*background: #43077b; !* the color of the underline *!*/
+        background: var(--primary-color);
+        scale: 0 1; /* Initially, the underline is scaled to 0 */
+        transition: .3s, translate 0s .3s;
+    }
+
+    .navbar a:hover:before {
+        scale: 1; /* Scale the underline on hover */
+    }
+
+    .navbar a:hover:before {
+        translate: 0;
+        transition: .3s;
+    }
+
+    .navbar:hover a:has(~ a:hover):before {
+        translate: 100% 0;
+        transition: .2s .2s, scale 0s .4s;
+    }
+
+    .navbar:hover a:hover ~ a:before {
+        translate: -100% 0;
+        transition: .2s .2s, scale 0s .4s;
+    }
+
+
+
 
 
 /*=============================== home ==============================*/
@@ -228,7 +287,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border:1px solid rebeccapurple;
+    /*border:1px solid rebeccapurple;*/
 }
 
 .works-container{
