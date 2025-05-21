@@ -4,18 +4,85 @@
         --primary-color: #dcdcdc;
         --text-color: #151515;
         --boder-color:saddlebrown;
+        --background-color: rgba(39, 39, 39, 0.47);
         --font01: "Oswald", cursive;
         --font02:  "Lato",cursive;
 
     }
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+}
+.header-container{
+    width: 100%;
+    height: 11vh;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+
+    background: var(--background-color);
+}
+.name{
+    width: 35vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*border: 2px solid saddlebrown;*/
+}
+.nav{
+    width: 65vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.navbar{
+    width: 65vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 
 
 
+/*=============================== home ==============================*/
 
-
-
-
+.home{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    border: 2px solid greenyellow;
+}
+.home-container{
+    width: 100%;
+    height: 90vh;
+    object-fit: contain;
+    z-index: 1;
+    border: 2px solid greenyellow;
+}
+.home-image{
+    width: 100%;
+    z-index: -1;
+    border: 2px solid greenyellow;
+}
+.glass{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
