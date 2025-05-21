@@ -273,68 +273,342 @@ body{
     /*border-radius:20% ;*/
 }
 
-    .slider {
-        width: 46vw;
-        height: 380px;
-        overflow: hidden;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        border-radius: 20px;
+.slider {
+    width: 46vw;
+    height: 380px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+}
 
+.slides {
+    /*display: flex;*/
+    width: 100%;
+    height: 380px;
+    animation-name: slide-animation;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
+
+}
+
+.slide {
+    min-width: 100%;
+    height: 380px;
+    transition-property: transform;
+    transition-duration: 5s;
+    transition-timing-function: ease-in-out;
+    border-radius: 20px;
+}
+
+.slide img {
+    width: 100%;
+    /*height: 380px;*/
+    object-fit: cover;
+}
+
+@keyframes slide-animation {
+    0% {
+        transform: translateY(0);
     }
+    15% {
+        transform: translateY(-100%);
+    }
+    30% {
+        transform: translateY(-200%);
+    }
+    45% {
+        transform: translateY(-300%);
+    }
+    60% {
+        transform: translateY(-200%);
+    }
+    75% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 
-    .slides {
-        /*display: flex;*/
+
+
+/*================================== SKILL ==================================*/
+
+
+    #skill{
+
+        position: relative;
+        top: 85vh;
+
+
         width: 100%;
-        height: 380px;
-        animation-name: slide-animation;
-        animation-duration: 35s;
-        animation-iteration-count: infinite;
+        height: 90vh;
+
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    #skill>div:first-child{
+        grid-column: 1/6;
+
+        position: relative;
+        top: 0;
+
+        /*border: 10px solid white;*/
+    }
+
+
+
+    #skill>div>h2{
+        color: var(--text-color);
+        font-size: 50px;
+
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span{
+            /*color: #43077b;*/
+            color: var(--text-color);
+            margin: 10px;
+        }
+
+        /*border: 10px solid white;*/
+    }
+
+
+
+
+    #skill>div:first-child {
+
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #skill>div>h2 {
+        --b: 0.1em;   /* the thickness of the line */
+        --c: white; /* the color */
+
+        color: white;
+        padding-block: var(--b);
+        background:
+                linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+                linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+        -webkit-background-clip: text,padding-box;
+        background-clip: text,padding-box;
+        transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+    }
+    #skill>div>h2:hover {
+        --_p: 100%;
+        --_s: .3s;
+    }
+
+
+
+    .skill>.icon{
+        height: 100px;
+        position: relative;
+        top: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /*border: 10px solid white;*/
+        font-size: 100px;
+    }
+
+    .skill>h4{
+        position: relative;
+        top: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+/*    !*=================================contact me..================================*!*/
+
+
+    #contactme{
+        width: 98vw;
+        height: 70vh;
+
+        position: relative;
+        top: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #contactme>div{
+        width: 90vw;
+        height: 60vh;
+
+        border-radius: 33px;
+        /*background: linear-gradient(225deg, #353535, #3f3f3f);*/
+        background: #212121;
+        /*box-shadow:  -32px 32px 63px #272727,*/
+        /*32px -32px 63px #4f4f4f;*/
+
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+
+        background: none;
+        border: none;
+        outline: none;
+        /*max-width: 190px;*/
+        padding: 10px 20px;
+        /*font-size: 16px;*/
+        /*border-radius: 9999px;*/
+        box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+        color: #fff;
+
+
+    }
+
+
+    .contact1{
+
+        height: 52vh;
+        width: 50vw;
+
+        position: absolute;
+        top: 60px;
+    }
+    .contact1>div>img{
+        /*border: 1px solid #212ad9;*/
+        margin-right: 10px;
+
+    }
+    .contact1>div{
+        width: 40vw;
+        /*border: 1px solid darkblue;*/
+    }
+    #contactme>div>div>div{
+        display: flex;
+        /*justify-content: left;*/
+        align-items: center;
+
+        margin-bottom: 30px;
+
+        position: relative;
+        top: 10vh;
+        left: 5vw;
+    }
+
+    .social-media{
+
+        height: 20vh;
+        display: flex;
+        justify-content: space-around;
+        /*border: 1px solid darkblue;*/
+
+    }
+
+
+    .card {
+        /*box-sizing: border-box;*/
+        width: 28vw;
+        height: 50vh;
+        /*background: #e8e8e8;*/
+        /*border: 1px solid white;*/
+        /*box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);*/
+        /*backdrop-filter: blur(10px);*/
+        /*border-radius: 17px;*/
+        /*text-align: center;*/
+        /*transition: all 0.5s;*/
+        /*/*display: flex;*/
+        /*/*align-items: center;*/
+        /*/*justify-content: center;*/
+        /*user-select: none;*/
+        /*font-weight: bolder;*/
+        /*color: black;*/
+
+        color: #fff;
+        padding: 0.7em 1.7em;
+        /*font-size: 18px;*/
+        border-radius: 0.5em;
+        background: var(--primary-color);
+        border: 1px solid #212121;
+        transition: all 0.3s;
+        box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #2f2f2f;
+
+        position: absolute;
+        right: 100px;
+        top: 60px;
+
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .card>input{
+        height: 5vh;
         border-radius: 20px;
+        /*box-shadow: 6px 6px 12px #000, -6px -6px 12px #2f2f2f;*/
+        background: #212121;
+        border: white;
+        /*border-bottom: 1px solid white;*/
+
+
+        margin: 2px;
+
+        /*margin: 30px;*/
+        background: none;
+        border: none;
+        outline: none;
+        /*max-width: 190px;*/
+        padding: 10px 20px;
+        /*font-size: 16px;*/
+        /*border-radius: 9999px;*/
+        box-shadow: inset 2px 5px 10px rgb(0, 0, 0);
+        color: #fff;
 
     }
 
-    .slide {
-        min-width: 100%;
-        height: 380px;
-        transition-property: transform;
-        transition-duration: 5s;
-        transition-timing-function: ease-in-out;
-        border-radius: 20px;
+    .card>input+input+input{
+        height: 15vh;
     }
 
-    .slide img {
-        width: 100%;
-        /*height: 380px;*/
-        object-fit: cover;
+    .card>button{
+        /*border-radius: 20px;*/
+        margin: 10px;
+
+        color: #fff;
+        padding: 0.7em 1.7em;
+        font-size: 18px;
+        border-radius: 0.5em;
+        background: #212121;
+        border: 1px solid #212121;
+        transition: all 0.3s;
+        box-shadow: 6px 6px 12px #ffffff, -6px -6px 12px #2f2f2f;
+
     }
 
-    @keyframes slide-animation {
-        0% {
-            transform: translateY(0);
-        }
-        15% {
-            transform: translateY(-100%);
-        }
-        30% {
-            transform: translateY(-200%);
-        }
-        45% {
-            transform: translateY(-300%);
-        }
-        60% {
-            transform: translateY(-200%);
-        }
-        75% {
-            transform: translateY(-100%);
-        }
-        100% {
-            transform: translateY(0);
-        }
+    button:active {
+        color: white;
+        box-shadow: inset 4px 4px 12px #ffffff, inset -4px -4px 12px #1f1f1f;
     }
 
 
 
 
+/**/
+/**/
+    /*@media all and (max-width: 1000px) {*/
+    /*        .header{*/
+/*    !*            scale: max(1);*!*/
+/*    !*        }*!*/
+/*    !*}*!*/
 
 
 
