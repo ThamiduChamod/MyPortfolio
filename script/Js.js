@@ -8,5 +8,24 @@ function imageOverlay() {
     console.log(imgWidth);
 }
 
-window.addEventListener("load", imageOverlay);
+$('#self-btn').on('click', function () {
+    $('#edu-btn-div').css('display','none');
+    $('#self-btn-div').css('display','block');
+
+});
+
+
+
+$('#education-btn').on('click', function () {
+    $('#edu-btn-div').css('display','block');
+    $('#self-btn-div').css('display','none');
+
+});
+
+window.addEventListener("load", function () {
+    imageOverlay();
+    $('#self-btn-div').css('display','block');
+    $('#edu-btn-div').css('display','none');
+
+} );
 window.addEventListener("resize", imageOverlay);
