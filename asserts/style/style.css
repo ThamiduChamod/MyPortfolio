@@ -7,14 +7,21 @@
         --background-color: rgba(39, 39, 39, 0.47);
         --font01: "Oswald", cursive;
         --font02:  "Lato",cursive;
+        --h2-font-size: 3vw;
 
     }
 *{
     box-sizing: border-box;
     font-family: var(--font01);
+    font-size: 1.5vw;
 }
 body{
     background: var(--primary-color);
+}
+.topic>span{
+    color: var(--primary-color);
+    font-size: var(--h2-font-size);
+    -webkit-text-stroke: 1px black;
 }
 
 .header{
@@ -40,9 +47,7 @@ body{
     justify-content: space-around;
 
 }
-.name>h1>span{
-    color: var(--primary-color);
-}
+
 .nav{
     width: 65vw;
     height: 10vh;
@@ -435,16 +440,13 @@ body{
     position: relative;
     top: 50px;
     color: var(--text-color);
-    font-size: 50px;
+    font-size: var(--h2-font-size);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 1vw;
 
-    span{
-        margin: 10px;
-        color: var(--text-color);
-        /*color: #43077b;*/
-    }
+
 }
 
 .works{
@@ -588,20 +590,13 @@ body{
     #skill>div>h2{
         color: var(--text-color);
         font-size: 50px;
-
+    /**/
         position: relative;
-
+    /**/
         display: flex;
         align-items: center;
         justify-content: center;
 
-        span{
-            /*color: #43077b;*/
-            color: var(--text-color);
-            margin: 10px;
-        }
-
-        /*border: 10px solid white;*/
     }
 
 
@@ -615,23 +610,7 @@ body{
         justify-content: center;
     }
 
-    #skill>div>h2 {
-        --b: 0.1em;   /* the thickness of the line */
-        --c: white; /* the color */
 
-        color: white;
-        padding-block: var(--b);
-        background:
-                linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
-                linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
-        -webkit-background-clip: text,padding-box;
-        background-clip: text,padding-box;
-        transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
-    }
-    #skill>div>h2:hover {
-        --_p: 100%;
-        --_s: .3s;
-    }
 
 
 
