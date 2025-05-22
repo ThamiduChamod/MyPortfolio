@@ -811,6 +811,103 @@ button:hover svg {
 }
 
 
+@media (max-width: 375px) {
+    .home-text h1 {
+        font-size: 11vw;
+    }
+
+    .home-text div {
+        font-size: 6vw;
+    }
+    /*===========================================*/
+    .works-container {
+        grid-template-columns: 1fr;
+    }
+
+    .slider, .images {
+        height: 220px;
+    }
+    /*===========================================*/
+
+    #skill {
+        grid-template-columns: 1fr;
+    }
+
+    .icon {
+        font-size: 2.2rem;
+    }
+
+    .skill h4 {
+        font-size: 0.9rem;
+    }
+    /*==================================================*/
+    .social-media i {
+        font-size: 1.4rem;
+    }
+
+    #message-input {
+        height: 60px;
+    }
+    /*============================================*/
+    .about-image {
+        max-width: 180px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .home-text h1 {
+        font-size: 12vw;
+    }
+
+    .home-text div {
+        font-size: 6.5vw;
+    }
+    /*  ==============*/
+    .works-container {
+        grid-template-columns: 1fr;
+    }
+
+    .slider, .images {
+        height: 200px;
+    }
+
+    .works-h3, .work-text h3 {
+        font-size: 1.2rem;
+    }
+    /*=================================*/
+
+    .icon {
+        font-size: 2rem;
+    }
+
+    .skill h4 {
+        font-size: 0.85rem;
+    }
+
+    #skill > div > h2 {
+        font-size: 1.6rem;
+    }
+    /*======================================*/
+    .social-media i {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 14px;
+    }
+    /*=============*/
+    .about-image {
+        max-width: 160px;
+    }
+
+    .about-btns > button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+}
+
 
 /*=================*/
 
