@@ -650,6 +650,47 @@ button:hover svg {
     transform: rotate(45deg);
 }
 
+/*====================================================================*/
+
+@media (max-width: 1440px) {
+    .works-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .slider {
+        height: 350px;
+    }
+    /*====================*/
+    #contactme > div {
+        grid-template-columns: 1fr;
+    }
+
+    .social-media {
+        justify-content: space-around;
+    }
+    /*==========================================*/
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-card,
+    .text-card {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .about-image {
+        max-width: 250px;
+    }
+
+}
+
+
+
+
+
+
 @media (max-width: 1024px) {
     .works-container {
         grid-template-columns: 1fr 1fr;
@@ -659,7 +700,7 @@ button:hover svg {
         height: 320px;
     }
 }
-
+/*=================*/
 @media  screen and (max-width: 375px) {
     .topic {
         font-size: 5vw;
