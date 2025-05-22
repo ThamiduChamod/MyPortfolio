@@ -650,14 +650,13 @@ button:hover svg {
     transform: rotate(45deg);
 }
 
-
-@media  screen and (max-width: 320px) {
-    .topic {
-        font-size: 6vw;
+@media (max-width: 1024px) {
+    .works-container {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .navbar a {
-        font-size: 6vw;
+    .slider {
+        height: 320px;
     }
 }
 
