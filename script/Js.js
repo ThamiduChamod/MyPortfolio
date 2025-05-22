@@ -71,6 +71,22 @@ $('#hamburger').on('click', function () {
 });
 
 
+function swapImageForSmallScreens() {
+    const image = document.getElementById("mainImg");
+    const newImageSrc = "asserts/images/my_4.jpg"; // ✅ Replace with your mobile image path
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+        image.src = newImageSrc;
+    } else {
+        image.src = "asserts/images/12.jpg"; // ✅ Default image for larger screens
+    }
+}
+
+// Run on page load
+window.addEventListener("load", swapImageForSmallScreens);
+// Run on resize
+window.addEventListener("resize", swapImageForSmallScreens);
+
 
 // // responsive header
 // const hamburger = document.getElementsByClassName("hamburger");
