@@ -686,11 +686,6 @@ button:hover svg {
 
 }
 
-
-
-
-
-
 @media (max-width: 1024px) {
     .works-container {
         grid-template-columns: 1fr 1fr;
@@ -700,7 +695,73 @@ button:hover svg {
         height: 320px;
     }
 }
+
+@media (max-width: 768px) {
+    .home-text h1 {
+        font-size: 8vw;
+    }
+
+    .home-text div {
+        font-size: 4.5vw;
+        letter-spacing: 2vw;
+    }
+    /*==========================================*/
+    .works-container {
+        grid-template-columns: 1fr;
+    }
+
+    .slider, .images {
+        height: 300px;
+    }
+    /*================================*/
+    #skill > div > h2 {
+        font-size: 2rem;
+    }
+
+    .icon {
+        font-size: 3rem;
+    }
+
+    .skill h4 {
+        font-size: 1rem;
+    }
+    /*=======================================*/
+    #contactme > div {
+        padding: 1rem;
+    }
+
+    .social-media i {
+        font-size: 1.8rem;
+    }
+    /*=============================*/
+    .about-btns {
+        flex-direction: column;
+    }
+
+    .about-btns > button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
 /*=================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media  screen and (max-width: 375px) {
     .topic {
         font-size: 5vw;
@@ -710,6 +771,16 @@ button:hover svg {
         font-size: 5.5vw;
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 @media  screen and (max-width: 425px) {
     .topic {
