@@ -51,12 +51,13 @@ body {
 }
 
 .topic {
-    font-size: 2vw;
+    font-size: var(--h2-font-size);
     color: #000;
 }
 
 .topic span {
-    color: var(--primary-color);
+    /*color: var(--primary-color);*/
+    color: rgba(8, 251, 0, 0.68);
     font-size: var(--h2-font-size);
     -webkit-text-stroke: 1px black;
 }
@@ -147,21 +148,33 @@ body {
     padding: 2rem;
 }
 
-.home-text h1 {
-    font-size: 6vw;
-    margin: 0.5rem 0;
-}
 
-.home-text div {
-    margin-top: 1rem;
-    letter-spacing: 1vw;
-    font-size: 3vw;
+
+.word {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 4VW;
+    letter-spacing: 6.6vw;
+    /*border: 1px solid khaki;*/
+
+}
+.word :first-child{
+    margin-left: 3.3vw;
+      }
+
+.key-container{
+    letter-spacing: 2.6vw;
+    font-size: 1rem;
+    width: 100%;
+    border: 4px solid khaki;
 }
 
 .home-text .key {
     display: inline-block;
-    font-size: inherit;
+    font-size: 8rem;
 }
+
 
 /*!*==============================================  ANIMATION DEVELOPER======================================================*!*/
 
