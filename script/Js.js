@@ -66,13 +66,18 @@ $('#education-btn').on('click', function () {
 
 });
 
-
-
-
-// responsive header
-const hamburger = document.getElementById("hamburger");
-const navbar = document.getElementById("navbar");
-
-hamburger.addEventListener("click", () => {
-    navbar.classList.toggle("show");
+$('#hamburger').on('click', function () {
+    $('.navbar').toggleClass('show');
 });
+
+
+
+// // responsive header
+// const hamburger = document.getElementsByClassName("hamburger");
+// const navbar = document.getElementsByClassName("navbar");
+//
+// hamburger.addEventListener("click", function () {
+//
+//     navbar.classList.toggle("show");
+//     console.log('qqqq')
+// });

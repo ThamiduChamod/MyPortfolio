@@ -4,21 +4,27 @@
     --text-color: #151515;
     --boder-color: saddlebrown;
     --background-color: rgba(39, 39, 39, 0.47);
-    --font01: "Oswald", cursive;
+    /*--font01: "Oswald", cursive;*/
     --font02: "Lato", cursive;
-    --h2-font-size: 3vw;
+    --main-font: 'Oswald', sans-serif;
+    --font01: Arial, sans-serif;
+    /*--text-color: #333;*/
+    --h2-font-size: 2rem;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font02);
+    font-family: var(--main-font);
 }
 
 body {
     background: var(--primary-color);
-    padding-top: 10vh;
+    margin: 0;
+    font-family: sans-serif;
+    background: #f0f0f0;
+    /*padding-top: 10vh;*/
 }
 
 .header {
