@@ -744,6 +744,74 @@ button:hover svg {
     }
 }
 
+@media (max-width: 425px) {
+    .home-text h1 {
+        font-size: 10vw;
+    }
+
+    .home-text div {
+        font-size: 5.5vw;
+        letter-spacing: 2vw;
+    }
+    /*=========================================*/
+    .works-container {
+        grid-template-columns: 1fr;
+    }
+
+    .slider, .images {
+        height: 250px;
+    }
+    /*===========================================*/
+
+    #skill {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .icon {
+        font-size: 2.5rem;
+    }
+
+    .skill h4 {
+        font-size: 0.95rem;
+    }
+
+    #skill > div > h2 {
+        font-size: 1.8rem;
+    }
+=====================================
+
+.contact-email img {
+    width: 25px;
+}
+
+    .social-media i {
+        font-size: 1.5rem;
+    }
+
+    .coolinput input {
+        font-size: 0.85rem;
+    }
+
+    button {
+        font-size: 15px;
+    }
+    /*================================*/
+    .about {
+        padding: 10px;
+    }
+
+    .photo-card,
+    .text-card {
+        padding: 10px;
+    }
+
+    .about-image {
+        max-width: 200px;
+    }
+}
+
+
+
 /*=================*/
 
 
