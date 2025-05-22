@@ -1,16 +1,3 @@
-let screen_width;
-function updateWindowSize() {
-     screen_width = window.innerWidth;
-    const height = window.innerHeight;
-    console.log(`Width: ${width}, Height: ${height}`);
-}
-
-// Call it initially
-// updateWindowSize();
-
-// Update when the window is resized
-window.addEventListener('resize', updateWindowSize);
-
 
 
 
@@ -40,7 +27,7 @@ window.addEventListener('resize', updateWindowSize);
 //
 // }
 
-window.addEventListener("resize", imageOverlay);
+// window.addEventListener("resize", imageOverlay);
 
 
 window.addEventListener("load", function () {

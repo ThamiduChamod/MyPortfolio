@@ -698,6 +698,39 @@ button:hover svg {
 }
 
 @media (max-width: 768px) {
+    .header-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        background: var(--background-color);
+        padding: 1rem;
+        display: none;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .nav {
+        justify-content: flex-end;
+    }
+
+    .navbar a {
+        font-size: 4vw;
+        text-align: right;
+        padding: 0.5em 0;
+    }
+    /*============================*/
     .home-text h1 {
         font-size: 8vw;
     }
