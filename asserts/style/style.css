@@ -1,121 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Grechen+Fuemen&family=Noto+Sans+TC:wght@100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Press+Start+2P&family=Ribeye+Marrow&display=swap');
+:root {
+    --primary-color: #e8e8e8;
+    --text-color: #151515;
+    --boder-color: saddlebrown;
+    --background-color: rgba(39, 39, 39, 0.47);
+    --font01: "Oswald", cursive;
+    --font02: "Lato", cursive;
+    --h2-font-size: 3vw;
+}
 
-    :root{
-        --primary-color:#e8e8e8;
-        --text-color: #151515;
-        --boder-color:saddlebrown;
-        --background-color: rgba(39, 39, 39, 0.47);
-        --font01: "Oswald", cursive;
-        --font02:  "Lato",cursive;
-        --h2-font-size: 3vw;
-
-    }
-*{
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: var(--font01);
-    font-size: 1.3vw;
+    font-family: var(--font02);
 }
-body{
+
+body {
     background: var(--primary-color);
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+    padding-top: 10vh;
 }
-.topic>span{
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background: var(--background-color);
+    z-index: 999;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 35vw 65vw;
+    height: 100%;
+    align-items: center;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topic {
+    font-size: 2vw;
+    color: #000;
+}
+
+.topic span {
     color: var(--primary-color);
     font-size: var(--h2-font-size);
     -webkit-text-stroke: 1px black;
 }
-.header{
-    position: fixed;
-    top: 0;
-    height: 10vh;
-    width: 100%;
-    z-index: 1;
-}
-.header-container{
-    width: 100%;
-    height: 10vh;
-    display: grid;
-    grid-template-columns: repeat(2,2fr);
 
-    background: var(--background-color);
-}
-.name{
-    width: 35vw;
-    height: 10vh;
+.nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-
+    justify-content: flex-end;
+    position: relative;
 }
 
-.nav{
-    width: 65vw;
-    height: 10vh;
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    margin-right: 1rem;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.navbar {
     display: flex;
+    gap: 1.5rem;
     align-items: center;
 }
-.navbar{
-    width: 65vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+
+.navbar a {
+    position: relative;
+    padding: 0 0.5em 0.25em;
+    cursor: pointer;
+    color: #e3e2e2;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.3s;
 }
 
+.navbar a:hover {
+    color: #fff;
+}
 
-/*============================ navbar ==============================*/
-    .navbar {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        font-size: 18px;
-        text-transform: uppercase;
-        color: #f4f3f3;
-        padding: 0;
-        margin: 0;
-        /*background-color: black;*/
-    }
-    .navbar a {
-        position: relative;
-        padding: 0 .5em .25em;
-        cursor: pointer;
-        color: #e3e2e2;
-        text-decoration: none;
-        transition: .3s;
-        overflow: hidden;
-    }
-    .navbar a:hover {
-        color: #fff;
-    }
-    .navbar a:before {
-        content: "";
-        position: absolute;
-        inset: calc(100% - 3px) 0 0 0; /* 3px is the thickness of the underline */
-        /*background: #ce4f20;*/
-        /*background: #43077b; !* the color of the underline *!*/
-        background: var(--primary-color);
-        scale: 0 1; /* Initially, the underline is scaled to 0 */
-        transition: .3s, translate 0s .3s;
-    }
-    .navbar a:hover:before {
-        scale: 1; /* Scale the underline on hover */
-    }
-    .navbar a:hover:before {
-        translate: 0;
-        transition: .3s;
-    }
-    .navbar:hover a:has(~ a:hover):before {
-        translate: 100% 0;
-        transition: .2s .2s, scale 0s .4s;
-    }
-    .navbar:hover a:hover ~ a:before {
-        translate: -100% 0;
-        transition: .2s .2s, scale 0s .4s;
-    }
+.navbar a::before {
+    content: "";
+    position: absolute;
+    inset: calc(100% - 3px) 0 0 0;
+    background: var(--primary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    transform-origin: left;
+}
 
-
-
+.navbar a:hover::before {
+    transform: scaleX(1);
+}
 
 
 /*=============================== home ==============================*/
@@ -130,6 +122,8 @@ body{
     /*justify-content: center;*/
     /*z-index: -1;*/
     object-fit: contain;
+    border: 1px solid red;
+
 
 }
 .home-image{
@@ -297,14 +291,13 @@ body{
 /*======================== About Me ========================*/
 
 .about{
-    position: relative;
+    position: absolute;
     top: 101vh;
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rebeccapurple;
 
 }
 .about-container{
@@ -390,9 +383,9 @@ body{
 
 #myWorks{
     position: relative;
-    top: 100vh;
+    top: -100vh;
     width: 100%;
-    height: 350vh;
+    height: 300vh;
     color: var(--text-color);
     /*margin-top: 10vh;*/
     display: grid;
@@ -402,8 +395,8 @@ body{
     border: 1px solid red;
 }
 #myWorks>div>h2{
-    position: relative;
-    top: 50px;
+    /*position: relative;*/
+    /*top: 50px;*/
     color: var(--text-color);
     font-size: var(--h2-font-size);
     display: flex;
@@ -415,7 +408,7 @@ body{
 }
 .works{
     width: 100%;
-    height: 450px;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -428,10 +421,9 @@ body{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     justify-content: space-around;
-    border-radius: 7px;
+    border-radius: 1vw;
     background: linear-gradient(45deg, #cacaca, #f0f0f0);
-    box-shadow:  24px -24px 48px #d3d3d3,
-    -24px 24px 48px #ededed;
+    box-shadow: 1.25vw -2.22vh 2.5vw #d3d3d3, -1.25vw 2.22vh 2.5vw #ededed;
 }
 .work-text{
     width: 44vw;
@@ -444,8 +436,8 @@ body{
     color: var(--text-color);
     /*width: 90vw;*/
     position: relative;
-    top: 20px;
-    left: 100px;
+    /*top: 2vh;*/
+    /*left: 100px;*/
     font-size: 1.8rem;
     display: flex;
     /*justify-content: space-around;*/
@@ -521,8 +513,8 @@ body{
 
     #skill{
 
-        position: relative;
-        top: 85vh;
+        position: absolute;
+        top: 500vh;
 
 
         width: 100%;
@@ -587,8 +579,8 @@ body{
         width: 100%;
         height: 70vh;
 
-        position: relative;
-        top: 90vh;
+        position: absolute;
+        top: 600vh;
 
         display: flex;
         align-items: center;
@@ -614,11 +606,11 @@ body{
         /*border: 1px solid rebeccapurple;*/
 
     }
-.contact1>div{
+.contact-email>div{
         display: flex;
 
     }
-.contact1>div>img{
+.contact-email>div>img{
         width: 4vw;
         margin-right: 10px;
 
@@ -740,3 +732,195 @@ button:hover svg {
     transform: rotate(45deg);
 }
 
+
+
+@media  screen and (max-width: 320px) {
+    .topic {
+        font-size: 6vw;
+    }
+
+    .navbar a {
+        font-size: 6vw;
+    }
+}
+
+@media  screen and (max-width: 375px) {
+    .topic {
+        font-size: 5vw;
+    }
+
+    .navbar a {
+        font-size: 5.5vw;
+    }
+}
+
+@media  screen and (max-width: 425px) {
+    .topic {
+        font-size: 4.5vw;
+    }
+
+    .navbar a {
+        font-size: 5vw;
+    }
+
+
+
+
+
+    .home{
+        width: 100%;
+
+        position: absolute;
+        top: 10vh;
+        height: 50vh;
+    }
+    .home-text>:first-child{
+        font-size: 6vw;
+        position: absolute;
+        top: 1vh;
+    }
+    .home-text>:nth-child(2){
+        position: relative;
+        font-size: 6vw;
+        top: 2.8vh;
+    }
+    .home-text>:nth-child(3){
+        position: relative;
+        font-size: 3vw;
+        top: 1vh;
+        letter-spacing: 6vw;
+    }
+
+    .about{
+        font-size: 85%;
+
+        position: relative;
+        top: 30vh;
+        width: 50%;
+        height: 30vh;
+
+    }
+    .photo-card{
+        height: 30vh;
+    }
+    .text-card{
+        height:30vh;
+    }
+    #myWorks{
+        font-size: 85%;
+
+        height: 110vh;
+        position: absolute;
+        top: 65vh;
+    }
+    .works{
+        height: 30vh;
+
+    }
+
+    .works-container{
+        height: 30vh;
+
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .work-text{
+        width: 100%;
+    }
+    .images{
+        width: 100vw;
+    }
+    .slider{
+        width: 100%;
+        height: 20vh;
+    }
+
+    #skill{
+        position: absolute;
+        top: 180vh;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    #skill>div:first-child{
+        grid-column: 1/3;
+
+    }
+    #contactme{
+        position: absolute;
+        top: 260vh;
+    }
+    #contactme>div{
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .contact1{
+        width: 100%;
+        height: 20vh;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        -webkit-align-content: center;
+    }
+    .social-media{
+        height: 10vh;
+
+    }
+    .contact-email{
+        display: flex;
+        justify-content: center;
+    }
+    .contactme-text-card{
+        width: 90%;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    .header-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        background: var(--background-color);
+        padding: 1rem;
+        display: none;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .nav {
+        justify-content: flex-end;
+    }
+
+    .navbar a {
+        font-size: 4vw;
+        text-align: right;
+        padding: 0.5em 0;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .topic {
+        font-size: 2.5vw;
+    }
+}
